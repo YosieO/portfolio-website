@@ -1,7 +1,8 @@
 /*
 Colors used:
 Light orange: #EDD8C0;
-Orange: #E8742C;
+Primary Orange: #E8742C;
+Secondary Orange: #FA8128;
 Black: #282D30;
 White: #FFFFFF;
 */
@@ -59,4 +60,53 @@ a:focus {
   color: #E8742C;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+}
+
+/* Buttons */
+.button{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+/* Keep this specific button styling at the very bottom */
+/* Project Work buttons */
+.button.project {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E8742C;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button.project:hover {
+  opacity: 0.85; /* Reduces the opacity of the button to 85% */
+  color: #000000;
+  text-decoration: underline;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+
+/* Footer Section */
+
+/* Email contact button */
+.button.contact{
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #E8742C;
+}
+.button.contact:hover{
+  background-color: #ff7f50;
+  color: #ffffff;
 }
