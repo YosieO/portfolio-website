@@ -54,7 +54,8 @@ img {
 }
 
 /* Hover state */
-a:hover {
+a:hover,
+a:focus {
   color: #E8742C;
   text-decoration: underline;
   /* Underlining when hovering over a link */
