@@ -6,11 +6,21 @@ Secondary Orange: #FA8128;
 Black: #282D30;
 White: #FFFFFF;
 */
+
 /*
 Fonts used:
 Bagatela (serif) for headers and titles;
 Poppins (sans serif) for texts in paragraphs
 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Font Family and sizes*/
 body {
   background-color: #EDD8C0;
@@ -49,85 +59,316 @@ h4 {
   font-weight: 400;
 }
 
-header{
-  background-color: #EDD8C0;
-  padding: 0.625em;
-  border-radius: 3px;
-}
-
 /* Viewport Size*/
 img {
   width: 100%;
 }
 
 a {
-  color: ##0000FF;
+  color: #0000FF;
   text-decoration: none;
 }
+
 a:visited {
   color: #7829C7;
 }
+
 a:hover,
 a:focus {
   color: #586265;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
+
 a:active {
   color: #c4342d;
 }
 
 /* Buttons */
-.button{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E8742C;
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active,
+.button:focus {
+  background-color: #994c30;
+  color: #000000;
+  border-bottom: 2px solid #E8742C;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 /* Keep this specific button styling at the very bottom */
 /* Project Work buttons */
 .button.project {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #E8742C;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
 }
 
 .button.project:hover {
-  opacity: 0.85; /* Reduces the opacity of the button to 85% */
+  opacity: 0.85;
+  /* Reduces the opacity of the button to 85% */
   color: #000000;
   text-decoration: underline;
   font-style: italic;
   opacity: 0.8;
 }
 
+.button:active,
+.button:focus {
+  background-color: #994c30;
+  color: #000000;
+  border-bottom: 2px solid #E8742C;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Layout Styling task 1.7 */
+/* Padding on entire page */
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* Margin at top and bottom of "rows" */
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+/* Navigation bar elements */
+.logo {
+  max-width: 200px;
+}
+
+header {
+  background-color: #EDD8C0;
+  text-align: center;
+  padding: 10px 0 4px;
+  box-shadow: 3px 3px 2px 0px rgba(169, 171, 172, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 150px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #282D30
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #7829C7
+}
+
+nav>ul>li>a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  background-color: #E8742C;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #282D30;
+  transition: 0.2s opacity;
+}
+
+nav>ul>li>a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #282D30;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #282D30;
+  transition: 0.2s opacity;
+}
+
+/* hero section,index.html */
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+/* Styling at project work */
+.container-project .row {
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.container-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project-image {
+  width: 40%;
+}
+
 /* About page */
-.about, .frinans{
+.about {
   background-color: #FFFFFF;
   padding: 0.625em;
   border-radius: 3px;
 }
 
+#profile {
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 25%;
+}
+
+/* Resume buttons */
+.button.resume {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E8742C;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button.resume:hover {
+  opacity: 0.85;
+  /* Reduces the opacity of the button to 85% */
+  color: #000000;
+  text-decoration: underline;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.button.resume:active,
+.button.resume:focus {
+  background-color: #994c30;
+  color: #000000;
+  border-bottom: 2px solid #E8742C;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Project Frinans page */
+.frinans {
+  background-color: #FFFFFF;
+  padding-top: 150px;
+  border-radius: 3px;
+}
+
+#frinans-mockup {
+  width: 50%;
+}
+
+#frinans-solution {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#frinans-interviewees {
+  width: 30%;
+}
+
 /* Footer Section */
+.container-footer {
+  background-color: #282D30;
+  color: #FFFFFF;
+  padding: 10px 10px;
+}
+
+.phone {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.sm-img {
+  max-width: 24px;
+  max-height: 24px;
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+}
 
 /* Email contact button */
-.button.contact{
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #E8742C;
-}
-.button.contact:hover{
-  background-color: #ff7f50;
+.button.contact {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E8742C;
   color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  color: #E8742C;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.button:active,
+.button:focus {
+  background-color: #994c30;
+  color: #000000;
+  border-bottom: 2px solid #E8742C;
+  text-decoration: none;
 }
