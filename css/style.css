@@ -60,12 +60,21 @@ img {
   width: 100%;
 }
 
-/* Hover state */
+a {
+  color: ##0000FF;
+  text-decoration: none;
+}
+a:visited {
+  color: #7829C7;
+}
 a:hover,
 a:focus {
-  color: #E8742C;
+  color: #586265;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+}
+a:active {
+  color: #c4342d;
 }
 
 /* Buttons */
