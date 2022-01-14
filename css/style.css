@@ -102,6 +102,12 @@ a:focus {
   opacity: 0.8;
 }
 
+/* About page */
+.about, .frinans{
+  background-color: #FFFFFF;
+  padding: 0.625em;
+  border-radius: 3px;
+}
 
 /* Footer Section */
 
