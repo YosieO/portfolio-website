@@ -249,10 +249,6 @@ nav>ul>li>a:active {
 	align-items: center;
 }
 
-.project-image {
-  width: 40%;
-}
-
 /* About page */
 .about {
   background-color: #FFFFFF;
@@ -263,7 +259,6 @@ nav>ul>li>a:active {
 #profile {
   padding-top: 40px;
   margin: 0 auto;
-  width: 25%;
 }
 
 /* Resume buttons */
@@ -305,20 +300,6 @@ nav>ul>li>a:active {
   background-color: #FFFFFF;
   padding-top: 150px;
   border-radius: 3px;
-}
-
-#frinans-mockup {
-  width: 50%;
-}
-
-#frinans-solution {
-  padding-top: 15px;
-  margin: 0 auto;
-  width: 50%;
-}
-
-#frinans-interviewees {
-  width: 30%;
 }
 
 /* Footer Section */
