@@ -271,15 +271,23 @@ nav>ul>li>a:active {
 }
 
 /* About page */
-.about {
+.about, .frinans {
   background-color: #FFFFFF;
   padding: 0.625em;
   border-radius: 3px;
 }
 
+#about-page h3 {
+  margin-top: 0;
+}
+
 #profile {
   padding-top: 40px;
   margin: 0 auto;
+}
+
+#about-me {
+  margin-bottom: 80px;
 }
 
 /* Resume buttons */
