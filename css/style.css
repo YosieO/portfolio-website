@@ -6,19 +6,17 @@ Secondary Orange: #FA8128;
 Black: #282D30;
 White: #FFFFFF;
 */
-
 /*
 Fonts used:
 Bagatela (serif) for headers and titles;
 Poppins (sans serif) for texts in paragraphs
 */
-
 * {
   box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Font Family and sizes*/
@@ -57,6 +55,11 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+/* ------Text hightlight------- */
+.simple-italics {
+  font-style: italic;
 }
 
 /* Viewport Size*/
@@ -157,7 +160,8 @@ a:active {
 
 /* Margin at top and bottom of "rows" */
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 /* Navigation bar elements */
@@ -230,23 +234,40 @@ nav>ul>li>a:active {
   transition: 0.2s opacity;
 }
 
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
 /* hero section,index.html */
-#hero h1 {
+#hero {
   text-align: center;
   margin: 0;
   padding: 0.67em 0;
 }
 
-/* Styling at project work */
-.container-project .row {
-  padding-bottom: 16px;
-  width: 100%;
+#hero span {
+  display: block;
 }
 
-.container-project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#work {
+  margin-bottom: 65px;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+/* Styling at project work */
+.row {
+  padding-bottom: 16px;
+  width: 100%;
 }
 
 /* About page */
@@ -353,3 +374,54 @@ nav>ul>li>a:active {
   border-bottom: 2px solid #E8742C;
   text-decoration: none;
 }
+
+/* Media Queries for small to x-large devices */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #work h3 {
+    margin-top: 0;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-md-7 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 40%;
+  }
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
