@@ -263,6 +263,43 @@ nav>ul>li>a:active {
   text-align: center;
 }
 
+/* CSS Animation */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to{transform: translate(200px,50px);}
+}
+
+.cloud-front{
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to{transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* Styling at project work */
 .row {
   padding-bottom: 16px;
@@ -291,6 +328,12 @@ nav>ul>li>a:active {
   margin-right: auto;
   width: 40%;
   height: 40%;
+}
+
+#about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Resume buttons */
@@ -334,10 +377,21 @@ nav>ul>li>a:active {
 }
 
 /* Footer Section */
-.container-footer {
+#contact {
+  text-align: center;
   background-color: #282D30;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact h2 {
+  color: #E8742C;
+}
+
+#contact p {
+  text-align: center;
   color: #FFFFFF;
-  padding: 10px 30px;
 }
 
 .phone {
@@ -346,12 +400,16 @@ nav>ul>li>a:active {
   font-style: italic;
 }
 
-.sm-img {
-  max-width: 24px;
-  max-height: 24px;
+#sociallinks .links {
   display: inline-block;
-  width: 100%;
-  padding-top: 20px;
+}
+
+.behancelogo {
+  width: 65px;
+}
+
+.linkedinlogo {
+  max-width: 65px;
 }
 
 /* Email contact button */
