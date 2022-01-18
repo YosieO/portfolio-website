@@ -134,16 +134,15 @@ a:active {
 }
 
 .button.project:hover {
-  opacity: 0.85;
-  /* Reduces the opacity of the button to 85% */
+  opacity: 0.8;
+  background-color: #E8742C;
   color: #000000;
   text-decoration: underline;
   font-style: italic;
-  opacity: 0.8;
 }
 
-.button:active,
-.button:focus {
+.button.project:active,
+.button.project:focus {
   background-color: #994c30;
   color: #000000;
   border-bottom: 2px solid #E8742C;
@@ -281,13 +280,17 @@ nav>ul>li>a:active {
   margin-top: 0;
 }
 
-#profile {
-  padding-top: 40px;
-  margin: 0 auto;
-}
-
 #about-me {
   margin-bottom: 80px;
+}
+
+#img-profile {
+  padding-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
 }
 
 /* Resume buttons */
@@ -307,12 +310,11 @@ nav>ul>li>a:active {
 }
 
 .button.resume:hover {
-  opacity: 0.85;
-  /* Reduces the opacity of the button to 85% */
+  opacity: 0.8;
+  background-color: #E8742C;
   color: #000000;
   text-decoration: underline;
   font-style: italic;
-  opacity: 0.8;
 }
 
 .button.resume:active,
@@ -377,6 +379,7 @@ nav>ul>li>a:active {
 
 .button:active,
 .button:focus {
+  opacity: 0.8;
   background-color: #994c30;
   color: #000000;
   border-bottom: 2px solid #E8742C;
