@@ -157,6 +157,12 @@ a:active {
   margin: 0 auto;
 }
 
+.padding {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 5px;
+}
+
 /* Margin at top and bottom of "rows" */
 .row {
   margin: 25px 0;
