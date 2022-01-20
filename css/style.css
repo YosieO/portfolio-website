@@ -175,47 +175,42 @@ a:active {
 }
 
 header {
-  background-color: #EDD8C0;
-  text-align: center;
-  padding: 10px 0 4px;
-  box-shadow: 3px 3px 2px 0px rgba(169, 171, 172, 0.75);
   position: fixed;
   width: 100%;
+  background-color: #EDD8C0;
+  box-shadow: 3px 3px 2px 0px rgba(169, 171, 172, 0.75);
+  padding: 10px 0 4px;
 }
 
 main {
   padding-top: 150px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   display: inline-block;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #282D30
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #7829C7
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   background-color: #E8742C;
@@ -227,7 +222,7 @@ nav>ul>li>a:hover {
   transition: 0.2s opacity;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -237,6 +232,39 @@ nav>ul>li>a:active {
   border-radius: 3px;
   border-bottom: 2px solid #282D30;
   transition: 0.2s opacity;
+}
+
+/* Navigation items are hidden except menu icon for screens less than 640px, small screens */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 25px;
+    padding-right: 0;
+}
+
+/* Will override when responsive class is toggled */
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .row::after{
@@ -452,9 +480,9 @@ nav>ul>li>a:active {
 
 /* Media Queries for small to x-large devices */
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -465,6 +493,24 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul {
+       margin: 1em 0;
+   }
+
+   nav > ul > li {
+       display: inline-block;
+   }
+
+   /* Removes menu icon and lists navigation items for larger than 640px*/
+   .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    /* Removes menu icon for screens larger than 640px */
+    .navtoggle li:last-child {
+        display: none;
+    }
 
   .col-md-6 {
     width: 50%;
