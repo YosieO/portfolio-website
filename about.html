@@ -3,20 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Setting the Viewport in HTML -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    About - Yosie Octavia • UX Designer • Stockholm
+    Yosie Octavia • UX Designer • Stockholm
   </title>
 
   <!-- add favicon -->
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
-  <!-- add normalize below -->
+  <!-- add normalize cdn below -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <!-- add style.css file below that's in the css directory -->
+
+  <!-- add style.css file -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- add font Noto Serif -->
@@ -25,20 +24,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <!--CDN code for fontawesome hamburger menu icon -->
-  <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
+
+  <!-- Setting the Viewport in HTML for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body id="about-page">
   <header>
     <div class="container">
-      <div>
-        <a href="index.html"><img src="img/logo-yosie-octavia.png" alt="Yosie Octavia Logo" class="logo"></a>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="img/logo-yosie-octavia.png" alt="Yosie Octavia Logo" class="logo">
+        </a>
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
