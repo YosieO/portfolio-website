@@ -76,11 +76,13 @@ img {
 }
 
 a {
+  background-color: inherit;
   color: #E8742C;
   text-decoration: none;
 }
 
 a:visited {
+  background-color: inherit;
   color: #AD3700;
 }
 
@@ -92,6 +94,7 @@ a:focus {
 }
 
 a:active {
+  background-color: inherit;
   color: #b45f06;
 }
 
@@ -261,7 +264,7 @@ nav > ul > li > a:active {
     right: 0;
     top: 2px;
     font-size: 25px;
-    padding-right: 0;
+    padding: 0.6em;
 }
 
 /* Will override when responsive class is toggled */
