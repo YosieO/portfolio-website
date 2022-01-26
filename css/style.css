@@ -372,12 +372,27 @@ nav > ul > li > a:active {
   padding-top: 40px;
   width: 60%;
   height: 60%;
+  padding-bottom: 50px;
 }
 
 #about-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+#mystory {
+  margin-right: 90px;
+  text-align: justify;
+}
+
+#arrow {
+  width: 45px;
+  height: 25px;
+}
+
+#skill {
+  margin: 2em 10em 5em 10em;
 }
 
 /* Resume buttons */
@@ -421,8 +436,7 @@ nav > ul > li > a:active {
 
 /* All projects */
 .frinans, .bluecall {
-  padding: 0.625em;
-  padding-top: 150px;
+  padding: 10em 9em 2em 9em;
   border-radius: 3px;
   text-align: justify;
 }
@@ -553,6 +567,27 @@ Small devices (smaller than 640px)
     padding-top: 150px;
     border-radius: 3px;
     text-align: left;
+  }
+
+  #work {
+    text-align: left;
+  }
+
+  #img-profile {
+    padding-bottom: 2em;
+  }
+
+  #mystory {
+    margin-right: 90px;
+    text-align: left;
+  }
+
+  .button.resume {
+    margin-bottom: 1.5em;
+  }
+
+  #skill {
+    margin: 0;
   }
 
   #frinans-interview {
