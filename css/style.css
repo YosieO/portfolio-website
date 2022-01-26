@@ -245,10 +245,6 @@ nav > ul > li > a:active {
     position: relative;
 }
 
-.navtoggle.responsive nav {
-    padding: 24px 0 0;
-}
-
 .navtoggle li .icon {
     position: absolute;
     right: 0;
@@ -260,8 +256,6 @@ nav > ul > li > a:active {
 /* Will override when responsive class is toggled */
 .navtoggle.responsive li  {
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
 }
 
 .navtoggle.responsive li:last-child  {
@@ -507,6 +501,20 @@ nav > ul > li > a:active {
 }
 
 /* Media Queries for small to x-large devices */
+/* ==============================
+Small devices (smaller than 640px)
+================================= */
+@media only screen and (max-width: 640px) {
+  .navtoggle.responsive nav {
+      padding: 24px 0 0;
+  }
+
+  navtoggle.responsive li  {
+    padding: 10px 0;
+  }
+
+}
+
 /* ==============================
 Medium devices (641px and larger)
 ================================= */
