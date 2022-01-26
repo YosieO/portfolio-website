@@ -58,6 +58,12 @@ h4 {
   font-weight: 400;
 }
 
+hr {
+  height: 1px;
+  background-color: #FA8128;
+  margin: 0 65px 0 50px;
+}
+
 /* ------Text hightlight------- */
 .simple-italics {
   font-style: italic;
@@ -69,12 +75,12 @@ img {
 }
 
 a {
-  color: #0000FF;
+  color: #E8742C;
   text-decoration: none;
 }
 
 a:visited {
-  color: #7829C7;
+  color: #AD3700;
 }
 
 a:hover,
@@ -85,7 +91,7 @@ a:focus {
 }
 
 a:active {
-  color: #c4342d;
+  color: #b45f06;
 }
 
 /* Buttons */
@@ -208,7 +214,7 @@ nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #7829C7
+  color: #AD3700
 }
 
 nav > ul > li > a:hover {
@@ -509,7 +515,7 @@ Small devices (smaller than 640px)
       padding: 24px 0 0;
   }
 
-  navtoggle.responsive li  {
+  .navtoggle.responsive li  {
     padding: 10px 0;
   }
 
