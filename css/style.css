@@ -3,6 +3,7 @@ Colors used:
 Light orange: #EDD8C0;
 Primary Orange: #E8742C;
 Secondary Orange: #FA8128;
+Darker orange: #AD3700;
 Black: #282D30;
 White: #FFFFFF;
 */
@@ -44,7 +45,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-  color: #E8742C;
+  color: #AD3700;
 }
 
 h3 {
@@ -290,7 +291,8 @@ nav > ul > li > a:active {
 }
 
 #work {
-  margin-bottom: 65px;
+  margin: 0 1em 3em 1em;
+  text-align: justify;
 }
 
 #work h2 {
@@ -341,7 +343,7 @@ nav > ul > li > a:active {
 }
 
 /* About page */
-.about, .frinans {
+.about {
   background-color: #FFFFFF;
   padding: 0.625em;
   border-radius: 3px;
@@ -356,12 +358,12 @@ nav > ul > li > a:active {
 }
 
 #img-profile {
-  padding-top: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  height: 40%;
+  padding-top: 40px;
+  width: 60%;
+  height: 60%;
 }
 
 #about-picture {
@@ -384,6 +386,12 @@ nav > ul > li > a:active {
   /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
+  text-align: center;
+  /* center the button */
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button.resume:hover {
@@ -403,12 +411,32 @@ nav > ul > li > a:active {
   text-decoration: none;
 }
 
-/* Project Frinans page */
-.frinans {
-  background-color: #FFFFFF;
+/* All projects */
+.frinans, .bluecall {
+  padding: 0.625em;
   padding-top: 150px;
   border-radius: 3px;
+  text-align: justify;
 }
+
+.overview-title {
+  color: #AD3700;
+  font-weight: bold;
+}
+
+/* Project Frinans page */
+.bg-oldlace {
+  padding: 2em 3em;
+  background-color: oldlace;
+  border-radius: 15px;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+/* Project BlueCall page */
+
 
 /* Footer Section */
 #contact {
