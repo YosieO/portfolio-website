@@ -50,7 +50,7 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 0;
 }
 
@@ -526,12 +526,27 @@ Small devices (smaller than 640px)
     padding: 10px 0;
   }
 
+  .padding {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+  }
+
+  .container {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .container-project {
     margin: 10px 0;
   }
 
   .button.project {
     margin-bottom: 30px;
+  }
+
+  #frinans-interview {
+    width: 90%;
   }
 
 }
@@ -571,6 +586,10 @@ Medium devices (641px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  #frinans-interview {
+    width: 40%;
   }
 
 }
