@@ -51,6 +51,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  margin-top: 0;
 }
 
 h4 {
@@ -159,7 +160,7 @@ a:active {
 
 /* Layout Styling task 1.7 */
 /* Padding on entire page */
-.container {
+.container .container-project {
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -174,6 +175,10 @@ a:active {
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
+}
+
+.row-project {
+
 }
 
 /* Navigation bar elements */
@@ -521,6 +526,14 @@ Small devices (smaller than 640px)
     padding: 10px 0;
   }
 
+  .container-project {
+    margin: 10px 0;
+  }
+
+  .button.project {
+    margin-bottom: 30px;
+  }
+
 }
 
 /* ==============================
@@ -558,10 +571,6 @@ Medium devices (641px and larger)
 
   .col-md-6 {
     width: 50%;
-  }
-
-  #work h3 {
-    margin-top: 0;
   }
 
 }
