@@ -9,8 +9,8 @@ White: #FFFFFF;
 */
 /*
 Fonts used:
-Bagatela (serif) for headers and titles;
-Poppins (sans serif) for texts in paragraphs
+Noto (serif) for headers and titles;
+Montserrat (sans serif) for texts in paragraphs
 */
 * {
   box-sizing: border-box;
@@ -23,17 +23,18 @@ html {
 /* Font Family and sizes*/
 body {
   background-color: #EDD8C0;
-  font-family: 'Noto Serif', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 400;
   /* Sets the font weight to 400 */
-  line-height: 1.5;
+  line-height: 1.8;
   /* Sets the line-height to 1.5 * the font-size */
   color: #282D30;
 }
 
 h1, h2, h3, h4 {
+  font-family: "Noto Serif", serif;
   line-height: 1.4;
 }
 
@@ -300,7 +301,7 @@ nav > ul > li > a:active {
 
 #work {
   margin: 0 1em 3em 1em;
-  text-align: justify;
+  text-align: left;
 }
 
 #work h2 {
@@ -412,7 +413,7 @@ nav > ul > li > a:active {
   text-align: center;
   /* center the button */
   display: block;
-  width: 200px;
+  width: 13em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -448,7 +449,7 @@ nav > ul > li > a:active {
 
 /* Project Frinans page */
 .bg-oldlace {
-  padding: 2em 3em;
+  padding: 2em 4em;
   background-color: oldlace;
   border-radius: 15px;
 }
@@ -481,7 +482,6 @@ nav > ul > li > a:active {
 .phone {
   color: #FFFFFF;
   text-decoration: underline;
-  font-style: italic;
 }
 
 #sociallinks .links {
