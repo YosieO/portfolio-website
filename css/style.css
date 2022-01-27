@@ -194,7 +194,6 @@ header {
   position: fixed;
   width: 100%;
   background-color: #EDD8C0;
-  box-shadow: 3px 3px 2px 0px rgba(169, 171, 172, 0.75);
   padding: 10px 0 4px;
 }
 
@@ -458,7 +457,42 @@ nav > ul > li > a:active {
   margin: 50px 0;
 }
 
-/* Project BlueCall page */
+#overview {
+  margin-top: 5px;
+  background-color: oldlace;
+  border-radius: 15px
+}
+
+.floating-menu {
+    background: inherit;
+    font-weight: 600;
+    padding: 1em;
+    width: 130px;
+    z-index: 2000;
+    position: fixed;
+    display: none;
+    top: 15em;
+    left: 0px;
+  }
+
+  .floating-menu a {
+    font-size: 0.7em;
+    display: block;
+    margin: 0 0.5em;
+    color: #282D30;
+  }
+
+  .floating-menu a:hover {
+    color: #AD3700;
+    font-style: italic;
+  }
+
+  .floating-menu a:active,
+  .floating-menu a:focus {
+    color: #AD3700;
+    font-style: italic;
+    text-decoration: none;
+  }
 
 
 /* Footer Section */
@@ -535,14 +569,6 @@ nav > ul > li > a:active {
 Small devices (smaller than 640px)
 ================================= */
 @media only screen and (max-width: 640px) {
-  .navtoggle.responsive nav {
-      padding: 24px 0 0;
-  }
-
-  .navtoggle.responsive li  {
-    padding: 10px 0;
-  }
-
   .padding {
     padding-right: 40px;
     padding-left: 40px;
@@ -558,16 +584,33 @@ Small devices (smaller than 640px)
     margin: 10px 0;
   }
 
+  .logo {
+    margin-top: 1em;
+  }
+
+  .navtoggle.responsive nav {
+      padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    padding: 10px 0;
+  }
+
   .button.project {
     margin-bottom: 30px;
   }
 
+  /* Projects */
   .frinans, .bluecall {
     padding: 0.625em;
     padding-top: 150px;
     border-radius: 3px;
     text-align: left;
   }
+
+  .floating-menu {
+      visibility: hidden;
+    }
 
   #work {
     text-align: left;

@@ -51,7 +51,20 @@
   </header>
 
   <main class="frinans">
-    <div class="container" class="padding">
+    <div>
+
+      <!-- Floating menu -->
+      <div>
+        <nav class="floating-menu">
+          <a href="#problem">Overview</a>
+          <a href="#research">Research</a>
+          <a href="#ideation">Ideation</a>
+          <a href="#wireframe">Wireframe</a>
+          <a href="#final-design">Final Design</a>
+          <a href="#conclusion">Conclusion</a>
+        </nav>
+      </div>
+      <!-- End of Floating menu -->
 
       <!-- open row for 2 columns for Frinans -->
       <div class="container" style="margin-top: 5px" ;>
@@ -69,6 +82,7 @@
             <h1 style="color: #AD3700; padding: 0 50px" ;>Frinans</h1>
             <p style="padding: 0 55px 0 50px" ;>Frinans is a web app that helps young adults simplify their finances by providing a platform to handle their money by monitoring budgets, saving more to reach financial goals, and taking control of
               their financial life.</p>
+            <br id="problem">
           </div>
           <!-- end of text column -->
         </div>
@@ -76,7 +90,7 @@
 
         <!-- Overview -->
         <!-- open row for 2 columns for Overview -->
-        <div class="container" style="margin-top: 5px; background-color: oldlace; border-radius: 15px" ;>
+        <div class="container" id="overview">
           <!-- left column: Problem -->
           <div class="row">
             <div class="column col-md-6 col-lg-7">
@@ -107,6 +121,7 @@
               <source srcset="img/frinans/solution-0.5x.png" media="(max-width:767px)">
               <img src="img/frinans/solution-1x.png" alt="Frinans app images." style="width: 80%; margin: auto; display: block; padding-bottom: 50px" ;>
             </picture>
+            <br id="research">
           </div>
           <!-- End Solution images -->
         </div>
@@ -164,7 +179,7 @@
               <picture>
                 <!-- User interviewees image -->
                 <source srcset="img/frinans/interviewees-1x.png" media="(max-width:767px)">
-                <img src="img/frinans/interviewees-1x.png" alt="User interviewees image";>
+                <img src="img/frinans/interviewees-1x.png" alt="User interviewees image" ;>
               </picture>
             </div>
             <!-- End of Interview illustration -->
@@ -215,6 +230,7 @@
                 <div class="column col-md-6 col-lg-5">
                   <source srcset="img/frinans/persona-rosa-0.5x.png" media="(max-width:767px)" style="border-radius: 15px" ;>
                   <img src="img/frinans/persona-rosa-1x.png" alt="Persona 2 of Rosa" style="border-radius: 15px" ;>
+                  <br id="ideation">
                 </div>
                 <!-- End of User Persona Rosa -->
               </div>
@@ -295,6 +311,7 @@
                   <source srcset="img/frinans/sitemap-0.5x.png" media="(max-width:767px)" style="width: 80%">
                   <img src="img/frinans/sitemap-1x.png" alt="Sitemap of Frinans" style="width: 95%">
                 </picture>
+                <br id="wireframe">
               </div>
               <!-- End of Sitemap image -->
             </div>
@@ -431,6 +448,7 @@
                   <picture>
                     <source srcset="img/frinans/midfi-bill-0.5x.png" media="(max-width:767px)" style="width: 57%" ;>
                     <img src="img/frinans/midfi-bill-1x.png" alt="Images of mid fidelity wireframes for Bill Payment Tracking feature." style="width: 57%" ;>
+                    <br id="final-design">
                   </picture>
                 </div>
                 <!-- end of image column -->
@@ -455,7 +473,8 @@
             <!-- Final Design context text-->
             <div>
               <p>After much research, testing, and many iterations I landed on my final design.
-                <br><a href="https://www.figma.com/proto/MBl9kOqS9PzhcRxwsEnbt1/Frinans?node-id=141%3A3417&page-id=141%3A3417&scaling=scale-down&starting-point-node-id=595%3A17791" target="_blank"><b>Click here</b></a> to see the interactive prototype made
+                <br><a href="https://www.figma.com/proto/MBl9kOqS9PzhcRxwsEnbt1/Frinans?node-id=141%3A3417&page-id=141%3A3417&scaling=scale-down&starting-point-node-id=595%3A17791" target="_blank"><b>Click here</b></a> to see the interactive
+                prototype made
                 in Figma!
               </p>
             </div>
@@ -466,6 +485,7 @@
                 <source srcset="img/frinans/hifi-screens-0.5x.png" media="(max-width:767px)">
                 <img src="img/frinans/hifi-screens-1x.png" alt="Images of high fidelity wireframes of Frinans web app.">
               </picture>
+              <br id="conclusion">
             </div>
             <!-- end of Final design images -->
           </div>
@@ -608,6 +628,16 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script type="text/javascript">
+    $(document).scroll(function() {
+      if ($(this).scrollTop() == 0) {
+        $(".floating-menu").slideUp(400);
+      } else {
+        $(".floating-menu").slideDown(600);
+      }
+
+    });
+  </script>
 
 </body>
 
