@@ -24,7 +24,7 @@ html {
 body {
   background-color: #EDD8C0;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   /* Sets the font size to 16px */
   font-weight: 400;
   /* Sets the font weight to 400 */
@@ -382,7 +382,7 @@ nav > ul > li > a:active {
     height: auto;
 }
 
-#mystory {
+#my-story {
   margin-right: 90px;
   text-align: justify;
 }
@@ -577,7 +577,7 @@ Small devices (smaller than 640px)
     padding-bottom: 2em;
   }
 
-  #mystory {
+  #my-story {
     margin-right: 90px;
     text-align: left;
   }
