@@ -403,8 +403,9 @@ nav>ul>li>a:active {
 }
 
 #arrow {
-  width: 45px;
-  height: 25px;
+  width:55px;
+  height:30px;
+  margin: 1.5em 0 5em 0;
 }
 
 #skill {
@@ -465,57 +466,25 @@ nav>ul>li>a:active {
 
 #spin:after {
   content: "";
-  animation: spin 13s infinite alternate linear;
+  animation: spin 15s infinite alternate linear;
 }
 
 @keyframes spin {
-  0% {
-    content: " Product Designer";
-  }
-
-  10% {
-    content: " Swimmer";
-  }
-
-  20% {
-    content: " Boardgame Lover";
-  }
-
-  30% {
-    content: " Globetrotter";
-  }
-
-  40% {
-    content: " Product Designer";
-  }
-
-  50% {
-    content: " Swimmer";
-  }
-
-  60% {
-    content: " Boardgame Lover";
-  }
-
-  70% {
-    content: " Globetrotter";
-  }
-
-  80% {
-    content: " Product Designer";
-  }
-
-  90% {
-    content: " Swimmer";
-  }
-
-  100% {
-    content: " Boardgame Lover";
-  }
-
-  110% {
-    content: " Globetrotter";
-  }
+  0% {content: " Product Designer";}
+  10% {content: " Avid Learner";}
+  20% {content: " Globetrotter";}
+  30% {content: " Boardgame Lover";}
+  40% {content: " Swimmer";}
+  50% {content: " Product Designer";}
+  60% {content: " Avid Learner";}
+  70% {content: " Globetrotter";}
+  80% {content: " Boardgame Lover";}
+  90% {content: " Swimmer";}
+  100% {content: " Product Designer";}
+  110% {content: " Avid Learner";}
+  120% {content: " Globetrotter";}
+  130% {content: " Boardgame Lover";}
+  140% {content: " Swimmer";}
 }
 
 /* All projects */
@@ -679,6 +648,13 @@ Small devices (smaller than 640px)
 
   .button.project {
     margin-bottom: 30px;
+  }
+
+  #Iam {
+    font-size: 1.75em;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 1em 0 1em;
   }
 
   /* Projects */

@@ -8,3 +8,12 @@ function menuToggle() {
         x.className = 'navtoggle';
     }
 }
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()> 20) {
+        $('#arrow').fadeOut();
+     }
+    else {
+      $('#arrow').fadeIn();
+     }
+ });
