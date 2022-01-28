@@ -24,9 +24,9 @@ html {
 body {
   background-color: #EDD8C0;
   font-family: "Montserrat", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   /* Sets the font size to 16px */
-  font-weight: 400;
+  font-weight: 500;
   /* Sets the font weight to 400 */
   line-height: 1.8;
   /* Sets the line-height to 1.5 * the font-size */
@@ -466,68 +466,68 @@ nav>ul>li>a:active {
 
 #spin:after {
   content: "";
-  animation: spin 15s infinite alternate linear;
+  animation: spin 20s infinite alternate linear;
 }
 
 @keyframes spin {
   0% {
-    content: " Product Designer";
+    content: " UX/UI Designer";
   }
 
   10% {
-    content: " Avid Learner";
+    content: " tree hugger";
   }
 
   20% {
-    content: " Globetrotter";
+    content: " bathroom singer";
   }
 
   30% {
-    content: " Boardgame Lover";
+    content: " game lover";
   }
 
   40% {
-    content: " Swimmer";
+    content: " chocolate addict";
   }
 
   50% {
-    content: " Product Designer";
+    content: " UX/UI Designer";
   }
 
   60% {
-    content: " Avid Learner";
+    content: " tree hugger";
   }
 
   70% {
-    content: " Globetrotter";
+    content: " bathroom singer";
   }
 
   80% {
-    content: " Boardgame Lover";
+    content: " game lover";
   }
 
   90% {
-    content: " Swimmer";
+    content: " chocolate addict";
   }
 
   100% {
-    content: " Product Designer";
+    content: " UX/UI Designer";
   }
 
   110% {
-    content: " Avid Learner";
+    content: " tree hugger";
   }
 
   120% {
-    content: " Globetrotter";
+    content: " bathroom singer";
   }
 
   130% {
-    content: " Boardgame Lover";
+    content: " game lover";
   }
 
   140% {
-    content: " Swimmer";
+    content: " chocolate addict";
   }
 }
 
