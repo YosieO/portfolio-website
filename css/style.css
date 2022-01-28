@@ -405,7 +405,7 @@ nav>ul>li>a:active {
 #arrow {
   width: 55px;
   height: 30px;
-  margin: 1.5em 0 5em 0;
+  margin: 2em 0 5em 0;
 }
 
 #skill {
@@ -533,9 +533,13 @@ nav>ul>li>a:active {
 
 /* All projects */
 .frinans, .bluecall {
-  padding: 10em 9em 2em 9em;
+  padding: 6em 9em 2em 9em;
   border-radius: 3px;
   text-align: justify;
+}
+
+#project-top-image {
+  margin-top: 2.2em;
 }
 
 .overview-title {
@@ -558,7 +562,7 @@ nav>ul>li>a:active {
   padding: 0 4em 0 2.5em;
 }
 
-#overview {
+#problem-solution {
   margin-top: 5px;
   background-color: oldlace;
   border-radius: 15px
@@ -577,7 +581,7 @@ nav>ul>li>a:active {
 .floating-menu {
   background: inherit;
   font-weight: 600;
-  padding: 1em;
+  padding: 0 0 0em 1em;
   width: 130px;
   z-index: 2000;
   position: fixed;
@@ -721,6 +725,11 @@ Small devices (smaller than 640px)
     padding-top: 150px;
     border-radius: 3px;
     text-align: left;
+    background-color: oldlace;
+  }
+
+  .bg-oldlace {
+    padding: 1em 3.2em;
   }
 
   .floating-menu {
@@ -765,8 +774,8 @@ Small devices (smaller than 640px)
     width: 90%;
   }
 
-  .bg-oldlace {
-    padding: 1em 3.2em;
+  .password {
+    padding: 10em;
   }
 
 }
