@@ -403,8 +403,8 @@ nav>ul>li>a:active {
 }
 
 #arrow {
-  width:55px;
-  height:30px;
+  width: 55px;
+  height: 30px;
   margin: 1.5em 0 5em 0;
 }
 
@@ -470,21 +470,65 @@ nav>ul>li>a:active {
 }
 
 @keyframes spin {
-  0% {content: " Product Designer";}
-  10% {content: " Avid Learner";}
-  20% {content: " Globetrotter";}
-  30% {content: " Boardgame Lover";}
-  40% {content: " Swimmer";}
-  50% {content: " Product Designer";}
-  60% {content: " Avid Learner";}
-  70% {content: " Globetrotter";}
-  80% {content: " Boardgame Lover";}
-  90% {content: " Swimmer";}
-  100% {content: " Product Designer";}
-  110% {content: " Avid Learner";}
-  120% {content: " Globetrotter";}
-  130% {content: " Boardgame Lover";}
-  140% {content: " Swimmer";}
+  0% {
+    content: " Product Designer";
+  }
+
+  10% {
+    content: " Avid Learner";
+  }
+
+  20% {
+    content: " Globetrotter";
+  }
+
+  30% {
+    content: " Boardgame Lover";
+  }
+
+  40% {
+    content: " Swimmer";
+  }
+
+  50% {
+    content: " Product Designer";
+  }
+
+  60% {
+    content: " Avid Learner";
+  }
+
+  70% {
+    content: " Globetrotter";
+  }
+
+  80% {
+    content: " Boardgame Lover";
+  }
+
+  90% {
+    content: " Swimmer";
+  }
+
+  100% {
+    content: " Product Designer";
+  }
+
+  110% {
+    content: " Avid Learner";
+  }
+
+  120% {
+    content: " Globetrotter";
+  }
+
+  130% {
+    content: " Boardgame Lover";
+  }
+
+  140% {
+    content: " Swimmer";
+  }
 }
 
 /* All projects */
@@ -510,10 +554,24 @@ nav>ul>li>a:active {
   margin: 50px 0;
 }
 
+#frinans-header {
+  padding: 0 4em 0 2.5em;
+}
+
 #overview {
   margin-top: 5px;
   background-color: oldlace;
   border-radius: 15px
+}
+
+#problem {
+  margin-right: 40px;
+  padding: 3.5em 1em 0 4em;
+}
+
+#solution {
+  margin-left: 30px;
+  padding: 3.5em 4em 0 1em;
 }
 
 .floating-menu {
@@ -678,7 +736,7 @@ Small devices (smaller than 640px)
   }
 
   #my-story {
-    margin-right: 90px;
+    margin-right: 0;
     text-align: left;
   }
 
@@ -690,9 +748,27 @@ Small devices (smaller than 640px)
     margin: 0;
   }
 
+  #frinans-header {
+    padding: 0;
+  }
+
+  #problem, #solution {
+    margin: 0;
+    padding: 3.5em 1em 0 1em;
+  }
+
+  #frinans-description {
+    padding: 0 10px 0 10px;
+  }
+
   #frinans-interview {
     width: 90%;
   }
+
+  .bg-oldlace {
+    padding: 1em 3.2em;
+  }
+
 }
 
 /* ==============================
@@ -729,8 +805,8 @@ Medium devices (641px and larger)
   }
 
   .col-md-6 {
-    width: 50%;
-  }
+        width: 50%;
+    }
 
   #frinans-interview {
     width: 40%;
