@@ -1,7 +1,7 @@
 /*
 Colors used:
 Light orange: #EDD8C0;
-Primary Orange: #E8742C;
+Primary Orange: #DD3800; from E8742C
 Secondary Orange: #FA8128;
 Darker orange: #AD3700;
 Black: #282D30;
@@ -20,9 +20,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Font Family and sizes*/
+/* Font Family and sizes */
 body {
-  background-color: #EDD8C0;
+  background-color: #edd8c0;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   /* Sets the font size to 16px */
@@ -30,10 +30,13 @@ body {
   /* Sets the font weight to 400 */
   line-height: 1.8;
   /* Sets the line-height to 1.5 * the font-size */
-  color: #282D30;
+  color: #282d30;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Noto Serif", serif;
   line-height: 1.4;
 }
@@ -46,7 +49,8 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-  color: #AD3700;
+  background-color: inherit;
+  color: #ad3700;
 }
 
 h3 {
@@ -62,7 +66,8 @@ h4 {
 
 hr {
   height: 1px;
-  background-color: #FA8128;
+  background-color: inherit;
+  color: #fa8128;
   margin: 0 65px 0 50px;
 }
 
@@ -71,24 +76,25 @@ hr {
   font-style: italic;
 }
 
-/* Viewport Size*/
+/* Viewport Size */
 img {
   width: 100%;
 }
 
 a {
   background-color: inherit;
-  color: #E8742C;
+  color: #dd3800;
   text-decoration: none;
 }
 
 a:visited {
   background-color: inherit;
-  color: #AD3700;
+  color: #ad3700;
 }
 
 a:hover,
 a:focus {
+  background-color: inherit;
   color: #586265;
   text-decoration: underline;
   /* Underlining when hovering over a link */
@@ -103,27 +109,27 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E8742C;
-  color: #ffffff;
+  background-color: #dd3800;
+  color: #fff;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 15px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8;
-  text-decoration: none;
+  background-color: #fff;
+  color: #dd3800;
 }
 
 .button:active,
 .button:focus {
-  background-color: #994c30;
-  color: #000000;
-  border-bottom: 2px solid #E8742C;
+  background-color: #fff;
+  color: #282d30;
+  border-bottom: 2px solid #dd3800;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -133,12 +139,12 @@ a:active {
 .button.project {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E8742C;
-  color: #ffffff;
+  background-color: #dd3800;
+  color: #fff;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 15px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -147,17 +153,17 @@ a:active {
 
 .button.project:hover {
   opacity: 0.8;
-  background-color: #E8742C;
-  color: #000000;
+  background-color: #fff;
+  color: #dd3800;
   text-decoration: underline;
   font-style: italic;
 }
 
 .button.project:active,
 .button.project:focus {
-  background-color: #994c30;
-  color: #000000;
-  border-bottom: 2px solid #E8742C;
+  background-color: #fff;
+  color: #282d30;
+  border-bottom: 2px solid #dd3800;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -178,10 +184,7 @@ a:active {
 /* Margin at top and bottom of "rows" */
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
 }
-
-.row-project {}
 
 /* Navigation bar elements */
 .logo {
@@ -189,9 +192,10 @@ a:active {
 }
 
 header {
+  background-color: #edd8c0;
+  color: inherit;
   position: fixed;
   width: 100%;
-  background-color: #EDD8C0;
   padding: 10px 0 4px;
 }
 
@@ -213,6 +217,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: inherit;
   color: #282D30
 }
 
@@ -220,29 +225,30 @@ nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: inherit;
   color: #AD3700
 }
 
 nav>ul>li>a:hover {
-  padding: 0 15px;
+  padding: 0 20px;
   text-transform: uppercase;
-  background-color: #E8742C;
-  color: #FFFFFF;
+  background-color: #dd3800;
+  color: #fff;
   font-weight: 700;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #282D30;
+  border-radius: 10px;
+  border-bottom: 2px solid #282d30;
   transition: 0.2s opacity;
 }
 
 nav>ul>li>a:active {
-  padding: 0 15px;
+  padding: 0 20px;
   text-transform: uppercase;
-  background-color: #FFFFFF;
-  color: #282D30;
+  background-color: #fff;
+  color: #282d30;
   font-weight: 700;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   border-bottom: 2px solid #282D30;
   transition: 0.2s opacity;
 }
@@ -289,15 +295,21 @@ nav>ul>li>a:active {
 #hero {
   text-align: center;
   margin: 0;
-  padding: 0.67em 0;
+  padding: 0.67em 0 0;
 }
 
 #hero span {
   display: block;
 }
 
+#hero-description {
+  margin-bottom: 5em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 #work {
-  margin: 0 1em 3em 1em;
+  margin: 0 1em 3em;
   text-align: left;
 }
 
@@ -368,13 +380,14 @@ nav>ul>li>a:active {
 
 /* About page */
 .about {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  color: inherit;
   padding: 0.625em;
   border-radius: 3px;
 }
 
-#about-page h3 {
-  margin-top: 0;
+#about-page {
+  margin-top: 8em;
 }
 
 #about-me {
@@ -405,23 +418,22 @@ nav>ul>li>a:active {
 #arrow {
   width: 55px;
   height: 30px;
-  margin: 2em 0 5em 0;
+  margin: 7em 0;
 }
 
 #skill {
-  margin: 2em 10em 5em 10em;
+  margin: 2em 10em 5em;
 }
 
 /* Resume buttons */
 .button.resume {
-  display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E8742C;
-  color: #ffffff;
+  background-color: #dd3800;
+  color: #fff;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 15px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -436,31 +448,33 @@ nav>ul>li>a:active {
 
 .button.resume:hover {
   opacity: 0.8;
-  background-color: #E8742C;
-  color: #000000;
+  background-color: #fff;
+  color: #dd3800;
+  border-color: #282d30;
   text-decoration: underline;
   font-style: italic;
 }
 
 .button.resume:active,
 .button.resume:focus {
-  background-color: #994c30;
-  color: #000000;
-  border-bottom: 2px solid #E8742C;
+  background-color: #fff;
+  color: #282d30;
+  border-bottom: 2px solid #dd3800;
   opacity: 0.8;
   text-decoration: none;
 }
 
 /* Text swap */
 #Iam {
-  font-size: 1.75em;
+  font-size: 1.8em;
   font-weight: 700;
   display: inline-block;
-  padding: 0 6.5em 0 6.5em;
+  padding: 0 6.5em;
 }
 
 #spin {
-  color: #AD3700;
+  background-color: inherit;
+  color: #ad3700;
   display: inline-block;
 }
 
@@ -471,63 +485,47 @@ nav>ul>li>a:active {
 
 @keyframes spin {
   0% {
-    content: " UX/UI Designer";
+    content: " UX/UI Designer 👩‍🎨";
   }
 
   10% {
-    content: " tree hugger";
+    content: " tree hugger 🌳";
   }
 
   20% {
-    content: " bathroom singer";
+    content: " bathroom singer 🎤";
   }
 
   30% {
-    content: " game lover";
+    content: " game lover 🎮";
   }
 
   40% {
-    content: " chocolate addict";
+    content: " chocolate addict 🍫";
   }
 
   50% {
-    content: " UX/UI Designer";
+    content: " digital nomad ✈️";
   }
 
   60% {
-    content: " tree hugger";
+    content: " UX/UI Designer 👩‍🎨";
   }
 
   70% {
-    content: " bathroom singer";
+    content: " tree hugger 🌳";
   }
 
   80% {
-    content: " game lover";
+    content: " bathroom singer 🎤";
   }
 
   90% {
-    content: " chocolate addict";
+    content: " game lover 🎮";
   }
 
   100% {
-    content: " UX/UI Designer";
-  }
-
-  110% {
-    content: " tree hugger";
-  }
-
-  120% {
-    content: " bathroom singer";
-  }
-
-  130% {
-    content: " game lover";
-  }
-
-  140% {
-    content: " chocolate addict";
+    content: " chocolate addict 🍫";
   }
 }
 
@@ -543,7 +541,8 @@ nav>ul>li>a:active {
 }
 
 .overview-title {
-  color: #AD3700;
+  background-color: inherit;
+  color: #ad3700;
   font-weight: bold;
 }
 
@@ -551,6 +550,7 @@ nav>ul>li>a:active {
 .bg-oldlace {
   padding: 2em 4em;
   background-color: oldlace;
+  color: inherit;
   border-radius: 15px;
 }
 
@@ -565,7 +565,8 @@ nav>ul>li>a:active {
 #problem-solution {
   margin-top: 5px;
   background-color: oldlace;
-  border-radius: 15px
+  color: inherit;
+  border-radius: 15px;
 }
 
 #problem {
@@ -581,30 +582,33 @@ nav>ul>li>a:active {
 .floating-menu {
   background: inherit;
   font-weight: 600;
-  padding: 0 0 0em 1em;
+  padding: 0 0 0 1em;
   width: 130px;
   z-index: 2000;
   position: fixed;
   display: none;
   top: 15em;
-  left: 0px;
+  left: 0;
 }
 
 .floating-menu a {
   font-size: 0.7em;
   display: block;
   margin: 0 0.5em;
-  color: #282D30;
+  background-color: inherit;
+  color: #282d30;
 }
 
 .floating-menu a:hover {
-  color: #AD3700;
+  background-color: inherit;
+  color: #ad3700;
   font-style: italic;
 }
 
 .floating-menu a:active,
 .floating-menu a:focus {
-  color: #AD3700;
+  background-color: inherit;
+  color: #ad3700;
   font-style: italic;
   text-decoration: none;
 }
@@ -612,23 +616,27 @@ nav>ul>li>a:active {
 /* Footer Section */
 #contact {
   text-align: center;
-  background-color: #282D30;
+  background-color: #282d30;
+  color: inherit;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
 
 #contact h2 {
-  color: #E8742C;
+  background-color: inherit;
+  color: #e8742c;
 }
 
 #contact p {
   text-align: center;
-  color: #FFFFFF;
+  background-color: inherit;
+  color: #fff;
 }
 
 .phone {
-  color: #FFFFFF;
+  background-color: inherit;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -648,12 +656,12 @@ nav>ul>li>a:active {
 .button.contact {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E8742C;
-  color: #ffffff;
+  background-color: #dd3800;
+  color: #fff;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 15px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -661,18 +669,17 @@ nav>ul>li>a:active {
 }
 
 .button:hover {
-  background-color: #FFFFFF;
-  color: #E8742C;
+  background-color: #fff;
+  color: #dd3800;
   text-decoration: underline;
   font-style: italic;
 }
 
 .button:active,
 .button:focus {
-  opacity: 0.8;
-  background-color: #994c30;
-  color: #000000;
-  border-bottom: 2px solid #E8742C;
+  background-color: #fff;
+  color: #282d30;
+  border-bottom: 2px solid #dd3800;
   text-decoration: none;
 }
 
@@ -713,19 +720,27 @@ Small devices (smaller than 640px)
   }
 
   #Iam {
-    font-size: 1.75em;
+    font-size: 1.1em;
     font-weight: 700;
     display: inline-block;
-    padding: 0 1em 0 1em;
+    padding: 0 1em;
+  }
+
+  #arrow {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   /* Projects */
-  .frinans, .bluecall {
-    padding: 0.625em;
+  .frinans,
+  .bluecall {
+    padding: 30px;
     padding-top: 150px;
     border-radius: 3px;
     text-align: left;
     background-color: oldlace;
+    color: inherit;
   }
 
   .bg-oldlace {
@@ -741,7 +756,7 @@ Small devices (smaller than 640px)
   }
 
   #img-profile {
-    padding-bottom: 2em;
+    padding-bottom: 50px;
   }
 
   #my-story {
@@ -761,13 +776,14 @@ Small devices (smaller than 640px)
     padding: 0;
   }
 
-  #problem, #solution {
+  #problem,
+  #solution {
     margin: 0;
-    padding: 3.5em 1em 0 1em;
+    padding: 3.5em 1em 0;
   }
 
   #frinans-description {
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
   }
 
   #frinans-interview {
@@ -777,7 +793,6 @@ Small devices (smaller than 640px)
   .password {
     padding: 10em;
   }
-
 }
 
 /* ==============================
@@ -795,15 +810,15 @@ Medium devices (641px and larger)
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
-  /* Removes menu icon and lists navigation items for larger than 640px*/
+  /* Removes menu icon and lists navigation items for larger than 640px */
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -814,8 +829,8 @@ Medium devices (641px and larger)
   }
 
   .col-md-6 {
-        width: 50%;
-    }
+    width: 50%;
+  }
 
   #frinans-interview {
     width: 40%;
@@ -830,18 +845,31 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px;
   }
 
   .col-md-7 {
     width: 60%;
-  }
-
-  .col-md-5 {
-    width: 40%;
   }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+  }
+
+  #arrow {
+    display: none;
+    visibility: hidden;
+  }
+
+  .col-md-7 {
+    width: 60%;
+  }
+}
