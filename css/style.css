@@ -181,9 +181,7 @@ a:active {
   /* 25px top and bottom, 0 left and right */
 }
 
-.row-project {
-
-}
+.row-project {}
 
 /* Navigation bar elements */
 .logo {
@@ -201,31 +199,31 @@ main {
   padding-top: 150px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #282D30
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #AD3700
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   background-color: #E8742C;
@@ -237,7 +235,7 @@ nav > ul > li > a:hover {
   transition: 0.2s opacity;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -256,27 +254,27 @@ nav > ul > li > a:active {
 
 .navtoggle,
 .navtoggle.responsive {
-    position: relative;
+  position: relative;
 }
 
 .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 25px;
-    padding: 0.6em;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 25px;
+  padding: 0.6em;
 }
 
 /* Will override when responsive class is toggled */
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-.row::after{
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -309,25 +307,38 @@ nav > ul > li > a:active {
 
 /* CSS Animation */
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to{transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
-.cloud-front{
+.cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
@@ -336,12 +347,17 @@ nav > ul > li > a:active {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to{transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Styling at project work */
@@ -376,9 +392,9 @@ nav > ul > li > a:active {
 }
 
 #about-picture {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #my-story {
@@ -434,6 +450,74 @@ nav > ul > li > a:active {
   text-decoration: none;
 }
 
+/* Text swap */
+#Iam {
+  font-size: 1.75em;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 6.5em 0 6.5em;
+}
+
+#spin {
+  color: #AD3700;
+  display: inline-block;
+}
+
+#spin:after {
+  content: "";
+  animation: spin 13s infinite alternate linear;
+}
+
+@keyframes spin {
+  0% {
+    content: " Product Designer";
+  }
+
+  10% {
+    content: " Swimmer";
+  }
+
+  20% {
+    content: " Boardgame Lover";
+  }
+
+  30% {
+    content: " Globetrotter";
+  }
+
+  40% {
+    content: " Product Designer";
+  }
+
+  50% {
+    content: " Swimmer";
+  }
+
+  60% {
+    content: " Boardgame Lover";
+  }
+
+  70% {
+    content: " Globetrotter";
+  }
+
+  80% {
+    content: " Product Designer";
+  }
+
+  90% {
+    content: " Swimmer";
+  }
+
+  100% {
+    content: " Boardgame Lover";
+  }
+
+  110% {
+    content: " Globetrotter";
+  }
+}
+
 /* All projects */
 .frinans, .bluecall {
   padding: 10em 9em 2em 9em;
@@ -464,36 +548,35 @@ nav > ul > li > a:active {
 }
 
 .floating-menu {
-    background: inherit;
-    font-weight: 600;
-    padding: 1em;
-    width: 130px;
-    z-index: 2000;
-    position: fixed;
-    display: none;
-    top: 15em;
-    left: 0px;
-  }
+  background: inherit;
+  font-weight: 600;
+  padding: 1em;
+  width: 130px;
+  z-index: 2000;
+  position: fixed;
+  display: none;
+  top: 15em;
+  left: 0px;
+}
 
-  .floating-menu a {
-    font-size: 0.7em;
-    display: block;
-    margin: 0 0.5em;
-    color: #282D30;
-  }
+.floating-menu a {
+  font-size: 0.7em;
+  display: block;
+  margin: 0 0.5em;
+  color: #282D30;
+}
 
-  .floating-menu a:hover {
-    color: #AD3700;
-    font-style: italic;
-  }
+.floating-menu a:hover {
+  color: #AD3700;
+  font-style: italic;
+}
 
-  .floating-menu a:active,
-  .floating-menu a:focus {
-    color: #AD3700;
-    font-style: italic;
-    text-decoration: none;
-  }
-
+.floating-menu a:active,
+.floating-menu a:focus {
+  color: #AD3700;
+  font-style: italic;
+  text-decoration: none;
+}
 
 /* Footer Section */
 #contact {
@@ -562,8 +645,6 @@ nav > ul > li > a:active {
   text-decoration: none;
 }
 
-
-
 /* Media Queries for small to x-large devices */
 /* ==============================
 Small devices (smaller than 640px)
@@ -589,10 +670,10 @@ Small devices (smaller than 640px)
   }
 
   .navtoggle.responsive nav {
-      padding: 24px 0 0;
+    padding: 24px 0 0;
   }
 
-  .navtoggle.responsive li  {
+  .navtoggle.responsive li {
     padding: 10px 0;
   }
 
@@ -609,8 +690,8 @@ Small devices (smaller than 640px)
   }
 
   .floating-menu {
-      visibility: hidden;
-    }
+    visibility: hidden;
+  }
 
   #work {
     text-align: left;
@@ -636,7 +717,6 @@ Small devices (smaller than 640px)
   #frinans-interview {
     width: 90%;
   }
-
 }
 
 /* ==============================
@@ -654,23 +734,23 @@ Medium devices (641px and larger)
     margin-top: 4px;
   }
 
-  nav > ul {
-       margin: 1em 0;
-   }
+  nav>ul {
+    margin: 1em 0;
+  }
 
-   nav > ul > li {
-       display: inline-block;
-   }
+  nav>ul>li {
+    display: inline-block;
+  }
 
-   /* Removes menu icon and lists navigation items for larger than 640px*/
-   .navtoggle li:not(:last-child) {
-        display: inline-block;
-    }
+  /* Removes menu icon and lists navigation items for larger than 640px*/
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-    /* Removes menu icon for screens larger than 640px */
-    .navtoggle li:last-child {
-        display: none;
-    }
+  /* Removes menu icon for screens larger than 640px */
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -679,7 +759,6 @@ Medium devices (641px and larger)
   #frinans-interview {
     width: 40%;
   }
-
 }
 
 /* ==============================
@@ -699,7 +778,6 @@ Large devices (1024px or larger)
   .col-md-5 {
     width: 40%;
   }
-
 }
 
 /* ==============================
