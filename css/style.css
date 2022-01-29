@@ -1,7 +1,7 @@
 /*
 Colors used:
 Light orange: #EDD8C0;
-Primary Orange: #DD3800; from E8742C
+Primary Orange: #DD3800; from #E8742C
 Secondary Orange: #FA8128;
 Darker orange: #AD3700;
 Black: #282D30;
@@ -476,7 +476,7 @@ nav>ul>li>a:active {
   animation: spin 20s infinite alternate linear;
 }
 
-@keyframes spin {
+@-webkit-@keyframes spin {
   0% {
     content: " UX/UI Designer 👩‍🎨";
   }
