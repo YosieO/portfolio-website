@@ -25,11 +25,9 @@ body {
   background-color: #edd8c0;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  /* Sets the font size to 16px */
   font-weight: 500;
-  /* Sets the font weight to 400 */
   line-height: 1.8;
-  /* Sets the line-height to 1.5 * the font-size */
+  /* Sets the line-height to 1.8 * the font-size */
   color: #282d30;
 }
 
@@ -69,6 +67,122 @@ hr {
   background-color: inherit;
   color: #fa8128;
   margin: 0 65px 0 50px;
+}
+
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: #ffba70;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 11s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(100px);
+  }
+
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
 }
 
 /* ------Text hightlight------- */
@@ -425,14 +539,17 @@ nav>ul>li>a:active {
 .button.resume {
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #dd3800;
-  color: #fff; /* needed to override the default link color */
+  color: #fff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 15px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
-  text-align: center; /* center the button */
+  text-align: center;
+  /* center the button */
   display: block;
   width: 13em;
   margin-left: auto;
@@ -473,7 +590,54 @@ nav>ul>li>a:active {
 
 #spin::after {
   content: "";
+  -webkit-animation: spin 20s infinite alternate linear;
   animation: spin 20s infinite alternate linear;
+}
+
+@-webkit-@keyframes spin {
+  0% {
+    content: " UX/UI Designer 👩‍🎨";
+  }
+
+  10% {
+    content: " tree hugger 🌳";
+  }
+
+  20% {
+    content: " bathroom singer 🎤";
+  }
+
+  30% {
+    content: " game lover 🎮";
+  }
+
+  40% {
+    content: " UX/UI Designer‍ 👩‍🎨";
+  }
+
+  50% {
+    content: " fun explorer 🤸‍♀️";
+  }
+
+  60% {
+    content: " novice coder 👩‍💻";
+  }
+
+  70% {
+    content: " digital nomad ✈️‍";
+  }
+
+  80% {
+    content: " UX/UI Designer 👩‍🎨";
+  }
+
+  90% {
+    content: " rabbit lover 🐰";
+  }
+
+  100% {
+    content: " chocolate addict 🍫";
+  }
 }
 
 @keyframes spin {
@@ -818,11 +982,11 @@ Medium devices (641px and larger)
     margin-top: 4px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
