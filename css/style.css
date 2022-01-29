@@ -577,6 +577,18 @@ nav > ul > li > a:active {
   padding: 3.5em 4em 0 1em;
 }
 
+#frinans-research {
+  padding: 40px 30px 30px;
+}
+
+#frinans-wireframe {
+  padding: 40px 30px;
+}
+
+#frinans-conclusion {
+  padding: 40px 30px 40px 35px;
+}
+
 .floating-menu {
   background: inherit;
   font-weight: 600;
@@ -691,7 +703,7 @@ Small devices (smaller than 640px)
   }
 
   .container {
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 0 auto;
   }
 
@@ -729,12 +741,12 @@ Small devices (smaller than 640px)
     padding-top: 150px;
     border-radius: 3px;
     text-align: left;
-    background-color: oldlace;
+    background-color: edd8c0;
     color: inherit;
   }
 
   .bg-oldlace {
-    padding: 1em 3.2em;
+    padding: 1em 2em;
   }
 
   .floating-menu {
@@ -762,14 +774,14 @@ Small devices (smaller than 640px)
     margin: 0;
   }
 
-  #frinans-header {
+  #project-header {
     padding: 0;
   }
 
   #problem,
   #solution {
     margin: 0;
-    padding: 3.5em 1em 0;
+    padding: 2em 1em 0;
   }
 
   #frinans-description {
@@ -778,6 +790,10 @@ Small devices (smaller than 640px)
 
   #frinans-interview {
     width: 90%;
+  }
+
+  #frinans-conclusion {
+    padding: 40px 20px 40px 15px;
   }
 
   .password {
@@ -819,7 +835,7 @@ Medium devices (641px and larger)
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 100%;
   }
 
   #frinans-interview {
