@@ -147,6 +147,7 @@ a:active {
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
+  text-align: center;
 }
 
 .button.project:hover {
@@ -444,8 +445,8 @@ nav > ul > li > a:active {
 
 .button.resume:hover {
   opacity: 0.8;
-  background-color: #fff;
-  color: #dd3800;
+  background-color: #dd3800;
+  color: #fff;
   border-color: #282d30;
   text-decoration: underline;
   font-style: italic;
@@ -453,7 +454,7 @@ nav > ul > li > a:active {
 
 .button.resume:active,
 .button.resume:focus {
-  background-color: #fff;
+  background-color: #edd8c0;
   color: #282d30;
   border-bottom: 2px solid #dd3800;
   opacity: 0.8;
@@ -462,10 +463,10 @@ nav > ul > li > a:active {
 
 /* Text swap */
 #Iam {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 1.6em;
+  font-weight: 500;
   display: inline-block;
-  padding: 0 6.5em;
+  padding: 0 9em;
 }
 
 #spin {
@@ -716,15 +717,9 @@ Small devices (smaller than 640px)
 
   #Iam {
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 500;
     display: inline-block;
     padding: 0 1em;
-  }
-
-  #arrow {
-    visibility: hidden;
-    margin: 0;
-    padding: 0;
   }
 
   /* Projects */
