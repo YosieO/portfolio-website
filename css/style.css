@@ -320,7 +320,7 @@ nav>ul>li>a:active {
 }
 
 /* CSS Animation */
-@-webkit-@keyframes color-change {
+@keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -342,7 +342,7 @@ nav>ul>li>a:active {
   animation-timing-function: linear;
 }
 
-@-webkit-@keyframes cloud-move {
+@keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
@@ -360,7 +360,7 @@ nav>ul>li>a:active {
   animation-timing-function: linear;
 }
 
-@-webkit-@keyframes cloud-move-reverse {
+@keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
@@ -476,7 +476,7 @@ nav>ul>li>a:active {
   animation: spin 20s infinite alternate linear;
 }
 
-@-webkit-@keyframes spin {
+@keyframes spin {
   0% {
     content: " UX/UI Designer 👩‍🎨";
   }
@@ -648,6 +648,10 @@ nav>ul>li>a:active {
 
 #sociallinks .links {
   display: inline-block;
+}
+
+.links {
+  margin: 0 0.5em;
 }
 
 .behancelogo {
