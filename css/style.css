@@ -872,11 +872,6 @@ X-large devices (1440px or larger)
     padding: 0 30px;
   }
 
-  #arrow {
-    display: none;
-    visibility: hidden;
-  }
-
   .col-md-7 {
     width: 60%;
   }
