@@ -320,7 +320,7 @@ nav>ul>li>a:active {
 }
 
 /* CSS Animation */
-@keyframes color-change {
+@-webkit-@keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -342,7 +342,7 @@ nav>ul>li>a:active {
   animation-timing-function: linear;
 }
 
-@keyframes cloud-move {
+@-webkit-@keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
@@ -360,7 +360,7 @@ nav>ul>li>a:active {
   animation-timing-function: linear;
 }
 
-@keyframes cloud-move-reverse {
+@-webkit-@keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
