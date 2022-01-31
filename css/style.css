@@ -858,12 +858,6 @@ nav>ul>li>a:active {
   color: #fff;
 }
 
-.phone {
-  background-color: inherit;
-  color: #fff;
-  text-decoration: underline;
-}
-
 #sociallinks .links {
   display: inline-block;
 }
@@ -953,7 +947,8 @@ Small devices (smaller than 640px)
   }
 
   .navtoggle.responsive nav {
-    padding: 24px 0 0;
+    padding-right: 1em;
+    text-align: right;
   }
 
   .navtoggle.responsive li {
@@ -967,6 +962,15 @@ Small devices (smaller than 640px)
 
   .button.project {
     margin-bottom: 30px;
+  }
+
+  #footer-text {
+    padding: 0 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .links {
+    margin: 0 0.2em;
   }
 
   #Iam {
