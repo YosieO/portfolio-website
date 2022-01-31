@@ -832,6 +832,12 @@ nav>ul>li>a:active {
   text-decoration: none;
 }
 
+/* Project BlueCall */
+#password-bluecall {
+  margin: 4em 0;
+  padding: 0 3.8em 0 3em;
+}
+
 /* Footer Section */
 #contact {
   text-align: center;
@@ -991,7 +997,9 @@ Small devices (smaller than 640px)
   }
 
   #img-profile {
-    padding-bottom: 50px;
+    padding-bottom: 2em;
+    width: 100%;
+    height: 100%;
   }
 
   #my-story {
@@ -1031,6 +1039,11 @@ Small devices (smaller than 640px)
 
   .password {
     padding: 10em;
+  }
+
+  #password-bluecall {
+    margin: 4em 0;
+    padding: 0 10px;
   }
 }
 
