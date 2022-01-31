@@ -241,7 +241,7 @@ img {
 
 a {
   background-color: inherit;
-  color: #ff702f;
+  color: #e7733f;
   text-decoration: none;
 }
 
@@ -266,7 +266,7 @@ a:active {
 /* Buttons */
 .button {
   display: inline-block;
-  background-color: #ff702f;
+  background-color: #e7733f;
   color: #343434;
   font-weight: 400;
   padding: 10px;
