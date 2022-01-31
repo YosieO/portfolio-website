@@ -301,8 +301,7 @@ a:active {
   border-color: #db4500;
   border-width: medium;
   border-radius: 15px;
-  border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
   text-align: center;
@@ -319,7 +318,7 @@ a:active {
 .button.project:active,
 .button.project:focus {
   background-color: #343434;
-  color: #282d30;
+  color: #fff;
   border-bottom: 2px solid #ff702f;
   opacity: 0.8;
   text-decoration: none;
