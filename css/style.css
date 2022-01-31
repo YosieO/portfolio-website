@@ -79,7 +79,7 @@ hr {
   z-index: -10;
   overflow: hidden;
   top: 0;
-  right: 5em;
+  right: 0;
 }
 
 .bubble {
@@ -104,7 +104,7 @@ hr {
 .bubble:nth-child(2) {
   width: 20px;
   height: 20px;
-  left: 20%;
+  left: 90%;
   animation-duration: 5s;
   animation-delay: 1s;
 }
@@ -168,7 +168,7 @@ hr {
 .bubble:nth-child(10) {
   width: 50px;
   height: 50px;
-  left: 25%;
+  left: 95%;
   animation-duration: 10s;
   animation-delay: 4s;
 }
@@ -184,7 +184,7 @@ hr {
 .bubble:nth-child(12) {
   width: 35px;
   height: 35px;
-  left: 70%;
+  left: 80%;
   animation-duration: 9s;
   animation-delay: 1s;
 }
@@ -200,7 +200,7 @@ hr {
 .bubble:nth-child(14) {
   width: 15px;
   height: 15px;
-  left: 45%;
+  left: 65%;
   animation-duration: 9s;
   animation-delay: 2s;
 }
