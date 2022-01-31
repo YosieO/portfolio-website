@@ -794,7 +794,7 @@ nav>ul>li>a:active {
 }
 
 #frinans-conclusion {
-  padding: 40px 30px 40px 35px;
+  padding: 40px 30px 15px 35px;
 }
 
 .floating-menu {
@@ -1033,7 +1033,7 @@ Small devices (smaller than 640px)
   }
 
   #frinans-conclusion {
-    padding: 40px 20px 40px 15px;
+    padding: 40px 20px 15px 15px;
   }
 
   .password {
