@@ -1,11 +1,14 @@
 /*
 Colors used:
-Light orange: #EDD8C0;
-Primary Orange: #DD3800; from #E8742C
+Light orange: #edd8c0;
+Primary Orange: #ff702f; from #E8742C
 Secondary Orange: #FA8128;
 Darker orange: #AD3700;
-Black: #282D30;
+Black: #343434; from #282D30
 White: #FFFFFF;
+
+Button background color:
+
 */
 /*
 Fonts used:
@@ -23,9 +26,9 @@ html {
 /* Font Family and sizes */
 body {
   background-color: #edd8c0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.8;
   /* Sets the line-height to 1.8 * the font-size */
   color: #282d30;
@@ -73,10 +76,10 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -10;
   overflow: hidden;
   top: 0;
-  left: 0;
+  right: 5em;
 }
 
 .bubble {
@@ -84,7 +87,7 @@ hr {
   bottom: -100px;
   width: 40px;
   height: 40px;
-  background: #ffba70;
+  background: #e96606;
   color: inherit;
   border-radius: 50%;
   opacity: 0.5;
@@ -94,7 +97,7 @@ hr {
 .bubble:nth-child(1) {
   width: 40px;
   height: 40px;
-  left: 10%;
+  right: 10%;
   animation-duration: 8s;
 }
 
@@ -109,7 +112,7 @@ hr {
 .bubble:nth-child(3) {
   width: 50px;
   height: 50px;
-  left: 35%;
+  right: 35%;
   animation-duration: 7s;
   animation-delay: 2s;
 }
@@ -125,7 +128,7 @@ hr {
 .bubble:nth-child(5) {
   width: 35px;
   height: 35px;
-  left: 55%;
+  right: 55%;
   animation-duration: 6s;
   animation-delay: 1s;
 }
@@ -141,7 +144,7 @@ hr {
 .bubble:nth-child(7) {
   width: 90px;
   height: 90px;
-  left: 70%;
+  right: 70%;
   animation-duration: 12s;
   animation-delay: 2s;
 }
@@ -157,17 +160,57 @@ hr {
 .bubble:nth-child(9) {
   width: 15px;
   height: 15px;
-  left: 70%;
+  right: 30%;
   animation-duration: 5s;
   animation-delay: 1s;
 }
 
 .bubble:nth-child(10) {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   left: 25%;
   animation-duration: 10s;
   animation-delay: 4s;
+}
+
+.bubble:nth-child(11) {
+  width: 30px;
+  height: 30px;
+  right: 55%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(12) {
+  width: 35px;
+  height: 35px;
+  left: 70%;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(13) {
+  width: 70px;
+  height: 70px;
+  right: 25%;
+  animation-duration: 4s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(14) {
+  width: 15px;
+  height: 15px;
+  left: 45%;
+  animation-duration: 9s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(15) {
+  width: 25px;
+  height: 25px;
+  right: 65%;
+  animation-duration: 3s;
+  animation-delay: 3s;
 }
 
 @keyframes rise {
@@ -198,7 +241,7 @@ img {
 
 a {
   background-color: inherit;
-  color: #dd3800;
+  color: #ff702f;
   text-decoration: none;
 }
 
@@ -223,10 +266,8 @@ a:active {
 /* Buttons */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #dd3800;
-  color: #fff;
-  /* needed to override the default link color */
+  background-color: #ff702f;
+  color: #343434;
   font-weight: 400;
   padding: 10px;
   border-radius: 15px;
@@ -236,15 +277,15 @@ a:active {
 }
 
 .button:hover {
-  background-color: #fff;
-  color: #dd3800;
+  background-color: #343434;
+  color: #ff702f;
 }
 
 .button:active,
 .button:focus {
-  background-color: #fff;
+  background-color: #343434;
   color: #282d30;
-  border-bottom: 2px solid #dd3800;
+  border-bottom: 2px solid #ff702f;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -253,12 +294,12 @@ a:active {
 /* Project Work buttons */
 .button.project {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #dd3800;
-  color: #fff;
-  /* needed to override the default link color */
+  background-color: #ff7b3d;
+  color: #333;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 15px;
+  border-color: #db4500;
+  border-width: medium;
   border-radius: 15px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
@@ -269,17 +310,17 @@ a:active {
 
 .button.project:hover {
   opacity: 0.8;
-  background-color: #fff;
-  color: #dd3800;
+  background-color: #343434;
+  color: #ff702f;
   text-decoration: underline;
   font-style: italic;
 }
 
 .button.project:active,
 .button.project:focus {
-  background-color: #fff;
+  background-color: #343434;
   color: #282d30;
-  border-bottom: 2px solid #dd3800;
+  border-bottom: 2px solid #ff702f;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -355,20 +396,22 @@ nav>ul>li>a:visited {
 nav>ul>li>a:hover {
   padding: 0 20px;
   text-transform: uppercase;
-  background-color: #dd3800;
-  color: #fff;
+  font-style: italic;
+  background-color: #ff7b3d;
+  color: #333;
   font-weight: 700;
   padding: 10px;
   border-radius: 10px;
-  border-bottom: 2px solid #282d30;
+  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
 
 nav>ul>li>a:active {
   padding: 0 20px;
   text-transform: uppercase;
-  background-color: #fff;
-  color: #282d30;
+  background-color: #343434;
+  color: #ff702f;
+  opacity: 0.8;
   font-weight: 700;
   padding: 10px;
   border-radius: 10px;
@@ -391,7 +434,7 @@ nav>ul>li>a:active {
   right: 0;
   top: 2px;
   font-size: 25px;
-  padding: 0.6em;
+  padding: 0 0.6em;
 }
 
 /* Will override when responsive class is toggled */
@@ -411,7 +454,7 @@ nav>ul>li>a:active {
 /* hero section,index.html */
 #hero {
   text-align: center;
-  margin: 0;
+  margin-bottom: 14.5em;
   padding: 0.67em 0 0;
 }
 
@@ -427,11 +470,12 @@ nav>ul>li>a:active {
 
 #work {
   margin: 0 1em 3em;
-  text-align: left;
+  text-align: center;
 }
 
 #work h2 {
-  text-align: center;
+  font-size: 2.75em;
+  padding-bottom: 0.5em;
 }
 
 /* CSS Animation */
@@ -527,9 +571,14 @@ nav>ul>li>a:active {
 }
 
 #arrow {
-  width: 55px;
-  height: 30px;
-  margin: 7em 0;
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  margin: auto;
+  bottom: 0;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
 }
 
 #skill {
@@ -538,12 +587,11 @@ nav>ul>li>a:active {
 
 /* Resume buttons */
 .button.resume {
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #dd3800;
-  color: #fff;
+  background-color: #E8742C;
+  color: #2e2e2e;
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 0.4em 0;
   border-radius: 15px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
@@ -559,8 +607,8 @@ nav>ul>li>a:active {
 
 .button.resume:hover {
   opacity: 0.8;
-  background-color: #dd3800;
-  color: #fff;
+  background-color: #ff5f15;
+  color: #000;
   border-color: #282d30;
   text-decoration: underline;
   font-style: italic;
@@ -568,9 +616,9 @@ nav>ul>li>a:active {
 
 .button.resume:active,
 .button.resume:focus {
-  background-color: #edd8c0;
-  color: #282d30;
-  border-bottom: 2px solid #dd3800;
+  background-color: #ff5e16;
+  color: #343434;
+  border-bottom: 2px solid #ff702f;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -882,12 +930,34 @@ Small devices (smaller than 640px)
     margin-top: 1em;
   }
 
+  .bubbles {
+    right: 0;
+  }
+
+  #hero {
+    padding-bottom: 1em;
+    margin-bottom: 5em;
+  }
+
+  #arrow {
+    visibility: hidden;
+  }
+
+  #work {
+    margin: 0;
+  }
+
   .navtoggle.responsive nav {
     padding: 24px 0 0;
   }
 
   .navtoggle.responsive li {
     padding: 10px 0;
+  }
+
+  .navtoggle li .icon {
+    padding: 0 0.6em;
+    margin: 0.7em;
   }
 
   .button.project {
@@ -918,10 +988,6 @@ Small devices (smaller than 640px)
 
   .floating-menu {
     visibility: hidden;
-  }
-
-  #work {
-    text-align: left;
   }
 
   #img-profile {
@@ -1035,7 +1101,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 2000px;
+    max-width: 3000px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 30px;
@@ -1043,5 +1109,16 @@ X-large devices (1440px or larger)
 
   .col-md-7 {
     width: 60%;
+  }
+
+  #hero {
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+    padding: 10em 0;
+  }
+
+  .bubbles {
+    height: 100%;
   }
 }

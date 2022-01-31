@@ -1,5 +1,6 @@
 console.log('Welcome to my portfolio! 😃')
 
+/* eslint-disable no-unused-vars */
 function menuToggle () {
   var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
