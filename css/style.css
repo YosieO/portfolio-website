@@ -639,54 +639,7 @@ nav>ul>li>a:active {
 
 #spin::after {
   content: "";
-  -webkit-animation: spin 20s infinite alternate linear;
   animation: spin 20s infinite alternate linear;
-}
-
-@-webkit-@keyframes spin {
-  0% {
-    content: " UX/UI Designer 👩‍🎨";
-  }
-
-  10% {
-    content: " tree hugger 🌳";
-  }
-
-  20% {
-    content: " bathroom singer 🎤";
-  }
-
-  30% {
-    content: " game lover 🎮";
-  }
-
-  40% {
-    content: " UX/UI Designer‍ 👩‍🎨";
-  }
-
-  50% {
-    content: " fun explorer 🤸‍♀️";
-  }
-
-  60% {
-    content: " novice coder 👩‍💻";
-  }
-
-  70% {
-    content: " banana-bread baker 🍌‍";
-  }
-
-  80% {
-    content: " UX/UI Designer 👩‍🎨";
-  }
-
-  90% {
-    content: " rabbit lover 🐰";
-  }
-
-  100% {
-    content: " chocolate addict 🍫";
-  }
 }
 
 @keyframes spin {
@@ -727,7 +680,7 @@ nav>ul>li>a:active {
   }
 
   90% {
-    content: " rabbit lover 🐰";
+    content: " owl lover 🦉";
   }
 
   100% {
