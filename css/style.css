@@ -455,6 +455,7 @@ nav>ul>li>a:active {
   text-align: center;
   margin-bottom: 14.5em;
   padding: 0.67em 0 0;
+  z-index: 5;
 }
 
 #hero span {
@@ -672,7 +673,7 @@ nav>ul>li>a:active {
   }
 
   70% {
-    content: " digital nomad ✈️‍";
+    content: " banana-bread baker 🍌‍";
   }
 
   80% {
@@ -718,7 +719,7 @@ nav>ul>li>a:active {
   }
 
   70% {
-    content: " digital nomad ✈️‍";
+    content: " banana-bread baker 🍌‍";
   }
 
   80% {
@@ -800,7 +801,7 @@ nav>ul>li>a:active {
 .floating-menu {
   background: inherit;
   font-weight: 600;
-  padding: 0 0 0 1em;
+  padding: 0 0 0 1.5em;
   width: 130px;
   z-index: 2000;
   position: fixed;
@@ -810,7 +811,7 @@ nav>ul>li>a:active {
 }
 
 .floating-menu a {
-  font-size: 0.7em;
+  font-size: 0.9em;
   display: block;
   margin: 0 0.5em;
   background-color: inherit;
@@ -949,6 +950,8 @@ Small devices (smaller than 640px)
   .navtoggle.responsive nav {
     padding-right: 1em;
     text-align: right;
+    z-index: 5;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   }
 
   .navtoggle.responsive li {
