@@ -13,7 +13,7 @@ Button background color:
 /*
 Fonts used:
 Noto (serif) for headers and titles;
-Montserrat (sans serif) for texts in paragraphs
+Poppins (sans serif) for texts in paragraphs
 */
 * {
   box-sizing: border-box;
@@ -26,7 +26,7 @@ html {
 /* Font Family and sizes */
 body {
   background-color: #edd8c0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
