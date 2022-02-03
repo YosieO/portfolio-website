@@ -1,5 +1,5 @@
 /*
-Colors used:
+COLORS
 Light orange: #edd8c0;
 Primary Orange: #ff702f; from #E8742C
 Secondary Orange: #FA8128;
@@ -7,14 +7,13 @@ Darker orange: #AD3700;
 Black: #343434; from #282D30
 White: #FFFFFF;
 
-Button background color:
-
-*/
-/*
-Fonts used:
+FONTS
 Noto (serif) for headers and titles;
-Poppins (sans serif) for texts in paragraphs
+Source Sans Pro (sans serif) for texts in paragraphs
 */
+/* =================================================
+GENERAL STYLING
+================================================= */
 * {
   box-sizing: border-box;
 }
@@ -26,7 +25,7 @@ html {
 /* Font Family and sizes */
 body {
   background-color: #edd8c0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
@@ -72,6 +71,588 @@ hr {
   margin: 0 65px 0 50px;
 }
 
+/* =================================================
+IMAGE STYLING
+================================================= */
+
+/* Viewport Size */
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+/* =================================================
+LINK STYLING
+================================================= */
+
+a {
+  background-color: inherit;
+  color: #e7733f;
+  text-decoration: none;
+}
+
+a:visited {
+  background-color: inherit;
+  color: #ad3700;
+}
+
+a:hover,
+a:focus {
+  background-color: inherit;
+  color: #586265;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active {
+  background-color: inherit;
+  color: #b45f06;
+}
+
+/* =================================================
+BUTTON STYLING
+================================================= */
+.button {
+  display: inline-block;
+  background-color: #e7733f;
+  color: #343434;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  background-color: #343434;
+  color: #ff702f;
+}
+
+.button:active,
+.button:focus {
+  background-color: #343434;
+  color: #282d30;
+  border-bottom: 2px solid #ff702f;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Project Work buttons - Keep this specific button styling at the very bottom */
+.button.project {
+  display: inline-block;
+  background-color: #ff7b3d;
+  color: #333;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-color: #db4500;
+  border-width: medium;
+  border-radius: 15px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button.project:hover {
+  opacity: 0.8;
+  background-color: #343434;
+  color: #ff702f;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.button.project:active,
+.button.project:focus {
+  background-color: #343434;
+  color: #fff;
+  border-bottom: 2px solid #ff702f;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* =================================================
+LAYOUT STYLING
+================================================= */
+
+/* Padding on entire page */
+.container .container-project {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 5px;
+}
+
+/* Margin at top and bottom of "rows" */
+.row {
+  margin: 25px 0;
+  padding-bottom: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Navigation bar elements */
+header {
+  background-color: #edd8c0;
+  color: inherit;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0 4px;
+}
+
+main {
+  padding-top: 150px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: inherit;
+  color: #282d30;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: inherit;
+  color: #ad3700;
+}
+
+nav>ul>li>a:hover {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  background-color: #ff7b3d;
+  color: #333;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+
+nav>ul>li>a:active {
+  padding: 0 20px;
+  text-transform: uppercase;
+  background-color: #343434;
+  color: #ff702f;
+  opacity: 0.8;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #282d30;
+  transition: 0.2s opacity;
+}
+
+/* Navigation items are hidden except menu icon for screens less than 640px, small screens */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 25px;
+  padding: 0 0.6em;
+}
+
+/* Will override when responsive class is toggled */
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+/* =================================================
+FOOTER STYLING
+================================================= */
+
+#contact {
+  text-align: center;
+  background-color: #282d30;
+  color: inherit;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact h2 {
+  background-color: inherit;
+  color: #e8742c;
+}
+
+#contact p {
+  text-align: center;
+  background-color: inherit;
+  color: #fff;
+}
+
+#sociallinks .links {
+  display: inline-block;
+}
+
+.links {
+  margin: 0 0.5em;
+}
+
+/* Email contact button */
+.button.contact {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #dd3800;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #dd3800;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.button:active,
+.button:focus {
+  background-color: #fff;
+  color: #282d30;
+  border-bottom: 2px solid #dd3800;
+  text-decoration: none;
+}
+
+/* INDEX =========================================================== */
+
+#hero {
+  text-align: center;
+  margin-bottom: 14.5em;
+  padding: 0.67em 0 0;
+  z-index: 5;
+}
+
+#hero span {
+  display: block;
+}
+
+#hero-description {
+  margin-bottom: 5em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#arrow {
+  position: static;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  left: 48%;
+  top: 50%;
+  bottom: 0;
+  z-index: 5;
+  width: 60px;
+  height: 60px;
+}
+
+#work {
+  margin: 0 1em 3em;
+  text-align: center;
+}
+
+#work h2 {
+  font-size: 2.75em;
+  padding-bottom: 0.5em;
+}
+
+/* ANIMATION - TEXT SWAP */
+
+#Iam {
+  font-size: 1.6em;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 9em;
+}
+
+#spin {
+  background-color: inherit;
+  color: #ad3700;
+  display: inline-block;
+}
+
+#spin::after {
+  content: "";
+  animation: spin 20s infinite alternate linear;
+}
+
+@keyframes spin {
+  0% {
+    content: " UX/UI Designer 👩‍🎨";
+  }
+
+  10% {
+    content: " tree hugger 🌳";
+  }
+
+  20% {
+    content: " bathroom singer 🎤";
+  }
+
+  30% {
+    content: " game lover 🎮";
+  }
+
+  40% {
+    content: " UX/UI Designer‍ 👩‍🎨";
+  }
+
+  50% {
+    content: " fun explorer 🤸‍♀️";
+  }
+
+  60% {
+    content: " novice coder 👩‍💻";
+  }
+
+  70% {
+    content: " banana-bread baker 🍌‍";
+  }
+
+  80% {
+    content: " UX/UI Designer 👩‍🎨";
+  }
+
+  90% {
+    content: " owl lover 🦉";
+  }
+
+  100% {
+    content: " chocolate addict 🍫";
+  }
+}
+
+/* ABOUT =========================================================== */
+
+.about {
+  background-color: #fff;
+  color: inherit;
+  padding: 0.625em;
+  border-radius: 3px;
+}
+
+#about-page {
+  margin-top: 8em;
+}
+
+#about-me {
+  margin-bottom: 80px;
+}
+
+#img-profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  width: 60%;
+  height: 60%;
+  padding-bottom: 50px;
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#my-story {
+  margin-right: 90px;
+  text-align: justify;
+}
+
+#skill {
+  margin: 2em 10em 5em;
+}
+
+/* Resume buttons */
+.button.resume {
+  background-color: #e8742c;
+  color: #2e2e2e;
+  font-weight: 400;
+  padding: 0.4em 0;
+  border-radius: 15px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+  text-align: center; /* center the button */
+  display: block;
+  width: 13em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.resume:hover {
+  opacity: 0.8;
+  background-color: #ff5f15;
+  color: #000;
+  border-color: #282d30;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.button.resume:active,
+.button.resume:focus {
+  background-color: #ff5e16;
+  color: #343434;
+  border-bottom: 2px solid #ff702f;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* ALL PROJECTS ======================================================== */
+
+.frinans,
+.bluecall {
+  padding: 6em 9em 2em;
+  border-radius: 3px;
+  text-align: justify;
+}
+
+#project-top-image {
+  margin-top: 2.2em;
+}
+
+.overview-title {
+  background-color: inherit;
+  color: #ad3700;
+  font-weight: bold;
+}
+
+/* FRINANS ======================================================== */
+
+.bg-oldlace {
+  padding: 2em 4em;
+  background-color: oldlace;
+  color: inherit;
+  border-radius: 15px;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+#project-header {
+  padding: 0 4em 0 2.5em;
+}
+
+#problem-solution {
+  margin-top: 5px;
+  background-color: oldlace;
+  color: inherit;
+  border-radius: 15px;
+}
+
+#problem {
+  margin-right: 40px;
+  padding: 3.5em 1em 0 4em;
+}
+
+#solution {
+  margin-left: 30px;
+  padding: 3.5em 4em 0 1em;
+}
+
+#frinans-research {
+  padding: 40px 30px 30px;
+}
+
+#frinans-wireframe {
+  padding: 40px 30px;
+}
+
+#frinans-conclusion {
+  padding: 40px 30px 15px 35px;
+}
+
+.floating-menu {
+  background: inherit;
+  font-weight: 600;
+  padding: 0 0 0 1.5em;
+  width: 130px;
+  z-index: 20;
+  position: fixed;
+  display: none;
+  top: 15em;
+  left: 0;
+}
+
+.floating-menu a {
+  font-size: 0.9em;
+  display: block;
+  margin: 0 0.5em;
+  background-color: inherit;
+  color: #282d30;
+}
+
+.floating-menu a:hover {
+  background-color: inherit;
+  color: #ad3700;
+  font-style: italic;
+}
+
+.floating-menu a:active,
+.floating-menu a:focus {
+  background-color: inherit;
+  color: #ad3700;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* BLUECALL ======================================================== */
+#password-bluecall {
+  margin: 4em 0;
+  padding: 0 3.8em 0 3em;
+}
+
+/* =================================================
+ANIMATION STYLING - BUBBLES
+================================================= */
 .bubbles {
   position: absolute;
   width: 100%;
@@ -229,256 +810,10 @@ hr {
   }
 }
 
-/* ------Text hightlight------- */
-.simple-italics {
-  font-style: italic;
-}
+/* =================================================
+ANIMATION STYLING - BRADENBURG GATE
+================================================= */
 
-/* Viewport Size */
-img {
-  width: 100%;
-}
-
-a {
-  background-color: inherit;
-  color: #e7733f;
-  text-decoration: none;
-}
-
-a:visited {
-  background-color: inherit;
-  color: #ad3700;
-}
-
-a:hover,
-a:focus {
-  background-color: inherit;
-  color: #586265;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
-}
-
-a:active {
-  background-color: inherit;
-  color: #b45f06;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  background-color: #e7733f;
-  color: #343434;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 15px;
-  border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
-.button:hover {
-  background-color: #343434;
-  color: #ff702f;
-}
-
-.button:active,
-.button:focus {
-  background-color: #343434;
-  color: #282d30;
-  border-bottom: 2px solid #ff702f;
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-/* Keep this specific button styling at the very bottom */
-/* Project Work buttons */
-.button.project {
-  display: inline-block;
-  background-color: #ff7b3d;
-  color: #333;
-  font-weight: 400;
-  padding: 10px 15px;
-  border-color: #db4500;
-  border-width: medium;
-  border-radius: 15px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
-  text-decoration: none;
-  text-align: center;
-}
-
-.button.project:hover {
-  opacity: 0.8;
-  background-color: #343434;
-  color: #ff702f;
-  text-decoration: underline;
-  font-style: italic;
-}
-
-.button.project:active,
-.button.project:focus {
-  background-color: #343434;
-  color: #fff;
-  border-bottom: 2px solid #ff702f;
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-/* Layout Styling task 1.7 */
-/* Padding on entire page */
-.container .container-project {
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
-.padding {
-  padding-right: 80px;
-  padding-left: 80px;
-  padding-bottom: 5px;
-}
-
-/* Margin at top and bottom of "rows" */
-.row {
-  margin: 25px 0;
-  padding-bottom: 16px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Navigation bar elements */
-.logo {
-  max-width: 200px;
-}
-
-header {
-  background-color: #edd8c0;
-  color: inherit;
-  position: fixed;
-  width: 100%;
-  padding: 10px 0 4px;
-}
-
-main {
-  padding-top: 150px;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: inherit;
-  color: #282d30;
-}
-
-nav>ul>li>a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: inherit;
-  color: #ad3700;
-}
-
-nav>ul>li>a:hover {
-  padding: 0 20px;
-  text-transform: uppercase;
-  font-style: italic;
-  background-color: #ff7b3d;
-  color: #333;
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
-}
-
-nav>ul>li>a:active {
-  padding: 0 20px;
-  text-transform: uppercase;
-  background-color: #343434;
-  color: #ff702f;
-  opacity: 0.8;
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
-  border-bottom: 2px solid #282d30;
-  transition: 0.2s opacity;
-}
-
-/* Navigation items are hidden except menu icon for screens less than 640px, small screens */
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 25px;
-  padding: 0 0.6em;
-}
-
-/* Will override when responsive class is toggled */
-.navtoggle.responsive li {
-  display: block;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-/* hero section,index.html */
-#hero {
-  text-align: center;
-  margin-bottom: 14.5em;
-  padding: 0.67em 0 0;
-  z-index: 5;
-}
-
-#hero span {
-  display: block;
-}
-
-#hero-description {
-  margin-bottom: 5em;
-  font-size: 1em;
-  font-weight: 400;
-}
-
-#work {
-  margin: 0 1em 3em;
-  text-align: center;
-}
-
-#work h2 {
-  font-size: 2.75em;
-  padding-bottom: 0.5em;
-}
-
-/* CSS Animation */
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -533,337 +868,16 @@ nav>ul>li>a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-/* About page */
-.about {
-  background-color: #fff;
-  color: inherit;
-  padding: 0.625em;
-  border-radius: 3px;
-}
-
-#about-page {
-  margin-top: 8em;
-}
-
-#about-me {
-  margin-bottom: 80px;
-}
-
-#img-profile {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  width: 60%;
-  height: 60%;
-  padding-bottom: 50px;
-}
-
-#about-picture {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-#my-story {
-  margin-right: 90px;
-  text-align: justify;
-}
-
-#arrow {
-  position: absolute;
-  left: 48%;
-  top: 50%;
-  margin: auto;
-  bottom: 0;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-}
-
-#skill {
-  margin: 2em 10em 5em;
-}
-
-/* Resume buttons */
-.button.resume {
-  background-color: #E8742C;
-  color: #2e2e2e;
-  /* needed to override the default link color */
-  font-weight: 400;
-  padding: 0.4em 0;
-  border-radius: 15px;
-  border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-  text-decoration: none;
-  text-align: center;
-  /* center the button */
-  display: block;
-  width: 13em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button.resume:hover {
-  opacity: 0.8;
-  background-color: #ff5f15;
-  color: #000;
-  border-color: #282d30;
-  text-decoration: underline;
-  font-style: italic;
-}
-
-.button.resume:active,
-.button.resume:focus {
-  background-color: #ff5e16;
-  color: #343434;
-  border-bottom: 2px solid #ff702f;
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-/* Text swap */
-#Iam {
-  font-size: 1.6em;
-  font-weight: 500;
-  display: inline-block;
-  padding: 0 9em;
-}
-
-#spin {
-  background-color: inherit;
-  color: #ad3700;
-  display: inline-block;
-}
-
-#spin::after {
-  content: "";
-  animation: spin 20s infinite alternate linear;
-}
-
-@keyframes spin {
-  0% {
-    content: " UX/UI Designer 👩‍🎨";
-  }
-
-  10% {
-    content: " tree hugger 🌳";
-  }
-
-  20% {
-    content: " bathroom singer 🎤";
-  }
-
-  30% {
-    content: " game lover 🎮";
-  }
-
-  40% {
-    content: " UX/UI Designer‍ 👩‍🎨";
-  }
-
-  50% {
-    content: " fun explorer 🤸‍♀️";
-  }
-
-  60% {
-    content: " novice coder 👩‍💻";
-  }
-
-  70% {
-    content: " banana-bread baker 🍌‍";
-  }
-
-  80% {
-    content: " UX/UI Designer 👩‍🎨";
-  }
-
-  90% {
-    content: " owl lover 🦉";
-  }
-
-  100% {
-    content: " chocolate addict 🍫";
-  }
-}
-
-/* All projects */
-.frinans,
-.bluecall {
-  padding: 6em 9em 2em;
-  border-radius: 3px;
-  text-align: justify;
-}
-
-#project-top-image {
-  margin-top: 2.2em;
-}
-
-.overview-title {
-  background-color: inherit;
-  color: #ad3700;
-  font-weight: bold;
-}
-
-/* Project Frinans page */
-.bg-oldlace {
-  padding: 2em 4em;
-  background-color: oldlace;
-  color: inherit;
-  border-radius: 15px;
-}
-
-.section {
-  margin: 50px 0;
-}
-
-#project-header {
-  padding: 0 4em 0 2.5em;
-}
-
-#problem-solution {
-  margin-top: 5px;
-  background-color: oldlace;
-  color: inherit;
-  border-radius: 15px;
-}
-
-#problem {
-  margin-right: 40px;
-  padding: 3.5em 1em 0 4em;
-}
-
-#solution {
-  margin-left: 30px;
-  padding: 3.5em 4em 0 1em;
-}
-
-#frinans-research {
-  padding: 40px 30px 30px;
-}
-
-#frinans-wireframe {
-  padding: 40px 30px;
-}
-
-#frinans-conclusion {
-  padding: 40px 30px 15px 35px;
-}
-
-.floating-menu {
-  background: inherit;
-  font-weight: 600;
-  padding: 0 0 0 1.5em;
-  width: 130px;
-  z-index: 2000;
-  position: fixed;
-  display: none;
-  top: 15em;
-  left: 0;
-}
-
-.floating-menu a {
-  font-size: 0.9em;
-  display: block;
-  margin: 0 0.5em;
-  background-color: inherit;
-  color: #282d30;
-}
-
-.floating-menu a:hover {
-  background-color: inherit;
-  color: #ad3700;
-  font-style: italic;
-}
-
-.floating-menu a:active,
-.floating-menu a:focus {
-  background-color: inherit;
-  color: #ad3700;
-  font-style: italic;
-  text-decoration: none;
-}
-
-/* Project BlueCall */
-#password-bluecall {
-  margin: 4em 0;
-  padding: 0 3.8em 0 3em;
-}
-
-/* Footer Section */
-#contact {
-  text-align: center;
-  background-color: #282d30;
-  color: inherit;
-  padding: 10px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#contact h2 {
-  background-color: inherit;
-  color: #e8742c;
-}
-
-#contact p {
-  text-align: center;
-  background-color: inherit;
-  color: #fff;
-}
-
-#sociallinks .links {
-  display: inline-block;
-}
-
-.links {
-  margin: 0 0.5em;
-}
-
-.behancelogo {
-  width: 65px;
-}
-
-.linkedinlogo {
-  max-width: 65px;
-}
-
-/* Email contact button */
-.button.contact {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #dd3800;
-  color: #fff;
-  /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 15px;
-  border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-  text-transform: uppercase;
-}
-
-.button:hover {
-  background-color: #fff;
-  color: #dd3800;
-  text-decoration: underline;
-  font-style: italic;
-}
-
-.button:active,
-.button:focus {
-  background-color: #fff;
-  color: #282d30;
-  border-bottom: 2px solid #dd3800;
-  text-decoration: none;
-}
-
 /* Media Queries for small to x-large devices */
+
 /* ==============================
 Small devices (smaller than 640px)
 ================================= */
 @media only screen and (max-width: 640px) {
+  header {
+    padding: 1em 0 0;
+  }
+
   .padding {
     padding-right: 40px;
     padding-left: 40px;
@@ -890,10 +904,6 @@ Small devices (smaller than 640px)
   #hero {
     padding-bottom: 1em;
     margin-bottom: 6em;
-  }
-
-  #arrow {
-    visibility: hidden;
   }
 
   #work {
@@ -940,7 +950,7 @@ Small devices (smaller than 640px)
   .frinans,
   .bluecall {
     padding: 30px;
-    padding-top: 150px;
+    padding-top: 90px;
     border-radius: 3px;
     text-align: left;
     background-color: edd8c0;
@@ -1039,8 +1049,16 @@ Medium devices (641px and larger)
     display: none;
   }
 
+  .col-md-4 {
+    width: 33.33%;
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
   }
 
   #frinans-interview {
@@ -1052,6 +1070,12 @@ Medium devices (641px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    vertical-align: middle;
+    z-index: 30;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -1059,12 +1083,20 @@ Large devices (1024px or larger)
     padding: 0 30px;
   }
 
-  .col-md-7 {
-    width: 60%;
+  .col-lg-4 {
+    width: 33.33%;
   }
 
-  .col-md-5 {
-    width: 40%;
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
   }
 }
 
@@ -1079,6 +1111,11 @@ X-large devices (1440px or larger)
     padding: 0 30px;
   }
 
+  nav {
+    width: auto;
+    float: right;
+  }
+
   .col-md-7 {
     width: 60%;
   }
@@ -1087,7 +1124,8 @@ X-large devices (1440px or larger)
     text-align: center;
     top: 50%;
     bottom: 50%;
-    padding: 10em 0;
+    margin-bottom: 12em;
+    padding: 2.5em 0 0;
   }
 
   .bubbles {
