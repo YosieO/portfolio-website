@@ -11,6 +11,7 @@ function menuToggle () {
 }
 
 /* Copy email address to clipboard ---------------------------------------- */
+var $
 $(document).ready(function () {
   // Needed to separate the disabling of the default action AND copy email to clipboard
   $('a[href^=mailto]').addClass('mailto-link')
@@ -50,3 +51,5 @@ function copyToClipboard (text) {
   document.execCommand('copy')
   document.body.removeChild(dummy)
 }
+
+$('#non-social a').addClass('selected')
