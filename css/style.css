@@ -29,8 +29,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8;
-  /* Sets the line-height to 1.8 * the font-size */
+  line-height: 1.8; /* Sets the line-height to 1.8 * the font-size */
   color: #282d30;
 }
 
@@ -559,7 +558,7 @@ FOOTER STYLING
 
 /* RESUME ======================================================== */
 .resume {
-  padding: 6em 10em 5em;
+  padding: 8em 10em 5em;
   text-align: center;
 }
 
@@ -991,7 +990,7 @@ Small devices (smaller than 640px)
 
   /* Resume */
   .resume {
-    padding: 6em 1em 3em;
+    padding: 6.5em 1em 3em;
   }
 
   /* Projects */
