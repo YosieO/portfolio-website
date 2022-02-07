@@ -11,7 +11,6 @@ FONTS
 Noto (serif) for headers and titles;
 Source Sans Pro (sans serif) for texts in paragraphs
 */
-
 /* =================================================
 GENERAL STYLING
 ================================================= */
@@ -29,7 +28,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8; /* Sets the line-height to 1.8 * the font-size */
+  line-height: 1.8;
+  /* Sets the line-height to 1.8 * the font-size */
   color: #282d30;
 }
 
@@ -389,6 +389,11 @@ FOOTER STYLING
   z-index: 5;
 }
 
+#hiwave {
+  margin: 1em 0;
+  padding: 0 0.2em;
+}
+
 #hero span {
   display: block;
 }
@@ -558,7 +563,7 @@ FOOTER STYLING
 
 /* RESUME ======================================================== */
 .resume {
-  padding: 8em 10em 5em;
+  padding: 6em 10em 5em;
   text-align: center;
 }
 
@@ -632,7 +637,7 @@ FOOTER STYLING
 .floating-menu {
   background: inherit;
   font-weight: 600;
-  padding: 0 0 0 1.5em;
+  padding-left: 1.5em;
   width: 130px;
   z-index: 20;
   position: fixed;
@@ -888,6 +893,29 @@ ANIMATION STYLING - BRADENBURG GATE
 
 /* Media Queries for small to x-large devices */
 /* ==============================
+Extra-small devices (smaller than 400px)
+================================= */
+@media only screen and (max-width: 400px) {
+  header {
+    padding: 1em 0 0;
+  }
+
+  #hiwave {
+    margin: 0 0 0.5em;
+    padding: 0 0.2em;
+  }
+
+  #hero {
+    padding: 3em 0;
+    margin-bottom: 1em;
+  }
+
+  #arrow {
+    margin-top: 0.8em;
+  }
+}
+
+/* ==============================
 Small devices (smaller than 640px)
 ================================= */
 @media only screen and (max-width: 640px) {
@@ -920,7 +948,7 @@ Small devices (smaller than 640px)
 
   #hero {
     padding-bottom: 1em;
-    margin-bottom: 7.6em;
+    margin-bottom: 10em;
   }
 
   #work {
@@ -990,7 +1018,7 @@ Small devices (smaller than 640px)
 
   /* Resume */
   .resume {
-    padding: 6.5em 1em 3em;
+    padding: 6em 1em 3em;
   }
 
   /* Projects */
@@ -1045,12 +1073,12 @@ Small devices (smaller than 640px)
 }
 
 /* ==============================
-Medium devices (641px and larger)
+Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 1.5em 0.8em 0;
   }
 
   nav {
@@ -1089,6 +1117,60 @@ Medium devices (641px and larger)
     width: 66.66%;
   }
 
+  #Iam {
+    padding: 0 3em;
+  }
+
+  #hero {
+    margin: 4em 0 15em;
+    padding: 8em 0 4em;
+  }
+
+  #img-profile {
+    padding-top: 0;
+  }
+
+  .button.resume {
+    margin-bottom: 2em;
+  }
+
+  #my-story {
+    margin-right: 0;
+  }
+
+  #skill {
+    margin: 2em 0 3em;
+  }
+
+  .resume {
+    padding: 6em 4.5em 2em;
+    text-align: center;
+  }
+
+  .frinans,
+  .bluecall {
+    padding: 5em 6em 2em;
+  }
+
+  .floating-menu {
+    padding-left: 1em;
+  }
+
+  .floating-menu a {
+    font-size: 0.7em;
+    padding-left: 0;
+  }
+
+  #problem {
+    margin-right: 1em;
+    padding: 2em 0.5em 0 2em;
+  }
+
+  #solution {
+    margin-left: 1em;
+    padding: 2em 2em 0 0.5em;
+  }
+
   #frinans-interview {
     width: 40%;
   }
@@ -1102,6 +1184,7 @@ Large devices (1024px or larger)
     text-align: unset;
     vertical-align: middle;
     z-index: 30;
+    padding: 1em;
   }
 
   .container {
@@ -1119,6 +1202,10 @@ Large devices (1024px or larger)
     width: 41.66%;
   }
 
+  .col-lg-6 {
+    width: 50%;
+  }
+
   .col-lg-7 {
     width: 58.33%;
   }
@@ -1126,37 +1213,48 @@ Large devices (1024px or larger)
   .col-lg-8 {
     width: 66.66%;
   }
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 3000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 30px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-  }
-
-  .col-md-7 {
-    width: 60%;
-  }
 
   #hero {
-    text-align: center;
-    top: 50%;
-    bottom: 50%;
-    margin-bottom: 12em;
-    padding: 2.5em 0 0;
+    padding: 0 0 4em;
   }
 
-  .bubbles {
-    height: 100%;
+  #arrow {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #img-profile {
+    padding-top: 40px;
+  }
+
+  #skill {
+    margin: 2em 10em 5em;
+  }
+
+  .resume {
+    padding: 6em 10em 5em;
+    text-align: center;
+  }
+
+  .frinans,
+  .bluecall {
+    padding: 6em 9em 2em;
+  }
+
+  .floating-menu a {
+    font-size: 0.9em;
+    padding-left: 1.5em;
+  }
+
+  #problem {
+    margin-right: 10px;
+    padding: 2.5em 1em 0 2em;
+  }
+
+  #solution {
+    margin-left: 10px;
+    padding: 2.5em 2em 0 1em;
   }
 }
