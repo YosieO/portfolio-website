@@ -637,8 +637,8 @@ FOOTER STYLING
 .floating-menu {
   background: inherit;
   font-weight: 600;
-  padding-left: 1.5em;
-  width: 130px;
+  padding-left: 1em;
+  width: 150px;
   z-index: 20;
   position: fixed;
   display: none;
@@ -647,7 +647,7 @@ FOOTER STYLING
 }
 
 .floating-menu a {
-  font-size: 0.9em;
+  font-size: 0.7em;
   display: block;
   margin: 0 0.5em;
   background-color: inherit;
