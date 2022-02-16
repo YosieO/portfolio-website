@@ -354,7 +354,7 @@ FOOTER STYLING
   color: #ff702f;
   padding: 2px 6px;
   border-radius: 2px;
-
+  
   &::after,
   &::before {
     content: '';
@@ -363,13 +363,10 @@ FOOTER STYLING
   &::before {
     top: 100%;
     left: 50%;
-    border: solid transparent;
     height: 0;
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: rgba(0, 0, 0, 0);
-    border-top-color: #000;
     border-width: 4px;
     margin-left: -4px;
   }
@@ -446,6 +443,7 @@ FOOTER STYLING
 }
 
 @keyframes spin {
+  
   0% {
     content: " UX/UI Designer 👩‍🎨";
   }
@@ -602,7 +600,7 @@ FOOTER STYLING
 }
 
 #project-header {
-  padding: 0 4em 0 2.5em;
+  padding: 0 4.5em 0 3em;
 }
 
 #problem-solution {
@@ -1028,7 +1026,7 @@ Small devices (smaller than 640px)
     padding-top: 90px;
     border-radius: 3px;
     text-align: left;
-    background-color: edd8c0;
+    background-color: #edd8c0;
     color: inherit;
   }
 
@@ -1215,12 +1213,12 @@ Large devices (1024px or larger)
   }
 
   #hero {
-    padding: 0 0 4em;
+    padding: 2em 0 9em;
   }
 
   #arrow {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
