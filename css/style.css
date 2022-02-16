@@ -1213,12 +1213,12 @@ Large devices (1024px or larger)
   }
 
   #hero {
-    padding: 2em 0 9em;
+    padding: 0 0 4em;
   }
 
   #arrow {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1254,5 +1254,21 @@ Large devices (1024px or larger)
   #solution {
     margin-left: 10px;
     padding: 2.5em 2em 0 1em;
+  }
+}
+
+/* ==============================
+Extra large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  #hero {
+    padding: 2em 0 9em;
+  }
+  
+  #arrow {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
